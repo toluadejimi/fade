@@ -8,9 +8,8 @@
                 <div class="login-area">
                     <div class="login-wrapper">
                         <div class="login-wrapper__top">
-                            <h3 class="title text-white">@lang('Welcome to') <strong>{{ __($general->site_name) }}</strong></h3>
-                            <p class="text-white">{{ __($pageTitle) }} @lang('to') {{ __($general->site_name) }}
-                                @lang('Dashboard')</p>
+
+                            <p class="text-white">Admin Login</p>
                         </div>
                         <div class="login-wrapper__body">
                             <form action="{{ route('admin.login') }}" method="POST"

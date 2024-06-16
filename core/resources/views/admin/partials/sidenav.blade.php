@@ -275,23 +275,6 @@
 
 
 
-                <li class="sidebar-menu-item ">
-                    <a href="{{route('admin.gift')}}" class="nav-link"
-                       data-default-url="{{route('admin.gift')}}">
-                        <i class="menu-icon las la-thumbs-up"></i>
-                        <span class="menu-title">@lang('Gift') </span>
-                    </a>
-                </li>
-
-
-                <li class="sidebar-menu-item ">
-                    <a href="{{route('admin.shipping')}}" class="nav-link"
-                       data-default-url="{{route('admin.shipping')}}">
-                        <i class="menu-icon las la-thumbs-up"></i>
-                        <span class="menu-title">@lang('Shipping') </span>
-                    </a>
-                </li>
-
 
 
                 <li class="sidebar__menu-header">@lang('Settings')</li>
