@@ -4,7 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cfd0884-5059-4ef3-b2fd-ec5a1ead117c" name="Changes" comment="remove fund added" />
+    <list default="true" id="2cfd0884-5059-4ef3-b2fd-ec5a1ead117c" name="Changes" comment="remove fund added">
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X04b4944ffc6a14645cac3469d91e4d7f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X0cf844e8d9aa6540f04c3dc913746ed7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X0e7cc685fdfefbf1a9fb39b05048bc5a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X1214bb1630b4a3589227883cb1ad719c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X198811df42ef47b5e42775e8acf2cfa3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X20bb37183c590c38a97398c347188232.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X2a9d6752754aaf4a15fb29722b59eaaf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X2b4e685da8cc9d4fc1b44cb27bb1f27c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X2c5147e1d0966d266e7fe57efcd06bdf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X36ff008b2076a963a945e9216f1ea8e8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X3ca2385f81962e6f15e35b35123c3b14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X3d24f33075ddfd7d4aef9052dcf34045.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X44965c73c6b5a2bb58de83c2ae201a1d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X4d1934ba177475a34387509df6121f7d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X4de796bc5db0df9250a93392c9541b14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X51b94f31c99d22c523323abbc1746701.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X548d5da0a40423d23f5cbe74824150dd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X66a0796a9680f5c46249b2d090fea668.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X782d1bdf54bcef5963ea41d41e975ae1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X7efa4b51c8509ed2614c06e7e9f39002.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X847380565f27bdc361f5a86da322ddcf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X8803ee736f92bc7c4798c25ebc937dcf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X90bb1e5e1aceadb33751f35d68179563.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X93b5d23f4bc99e99c1c32b0418916f10.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X948563a529eb563a4e5db4b75205f725.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X958dfde692b129275d74337b547b5728.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X9ae11f4578354aa693f30ef42f940338.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X9c00832bee49f2f44afeadb4e033184e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/X9eff841ab15c0c24da74b16f1fa7094b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xb7371bd9fec8e3f684208c8d9f990d23.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xc1d993defb3816a3d10e2a2b1966e050.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xc515b2d94c428cdd7cfbb31d09a58200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xceecadef219626f126e92523bf842d6f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xd508f0e25b9db9aa69448475feb04f83.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xd7beb09bbdb67cd6ef05651aad7f1d76.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xdd7add9cd24fe4803f52cb3babb11b1f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xde52bc27181d4ac866060b74ba1b4109.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xe2a472b030d6a93443f6c1198ecbefce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xe45566ffc44ee1f4c650ad3f05ab000a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xee1b122a0cdaa07e00d27a9a701df235.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/debugbar/Xf6e73044b676cc63659d5039b58b4fb6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/sessions/DeCWBIYHXnEVe28msJSUlRMmqf6Y2C8n78L5LQBI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/sessions/REkkpnO4RqWWCDiZxzyZCPIwFYJY9ooTp5CYQI72" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +242,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/project/fadded/core/resources/views/templates/basic/layouts&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -261,6 +306,9 @@
       <workItem from="1716720657692" duration="2913000" />
       <workItem from="1716864886720" duration="18398000" />
       <workItem from="1717531525451" duration="146000" />
+      <workItem from="1717699146047" duration="4000" />
+      <workItem from="1717699184713" duration="483000" />
+      <workItem from="1717738566292" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="Register Added">
       <option name="closed" value="true" />

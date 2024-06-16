@@ -274,24 +274,7 @@
                 </li>
 
 
-
-                <li class="sidebar-menu-item ">
-                    <a href="<?php echo e(route('admin.gift')); ?>" class="nav-link"
-                       data-default-url="<?php echo e(route('admin.gift')); ?>">
-                        <i class="menu-icon las la-thumbs-up"></i>
-                        <span class="menu-title"><?php echo app('translator')->get('Gift'); ?> </span>
-                    </a>
-                </li>
-
-
-                <li class="sidebar-menu-item ">
-                    <a href="<?php echo e(route('admin.shipping')); ?>" class="nav-link"
-                       data-default-url="<?php echo e(route('admin.shipping')); ?>">
-                        <i class="menu-icon las la-thumbs-up"></i>
-                        <span class="menu-title"><?php echo app('translator')->get('Shipping'); ?> </span>
-                    </a>
-                </li>
-
+                
 
 
                 <li class="sidebar__menu-header"><?php echo app('translator')->get('Settings'); ?></li>
