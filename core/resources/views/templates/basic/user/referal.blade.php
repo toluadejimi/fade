@@ -30,7 +30,7 @@
 
                     <div class="d-flex justify-content-center">
 
-                        <p>Invite your friends to trade with Loggsplug and make money when they  Buy our Products! T&Cs apply</p>
+                        <p>Invite your friends to trade with Fadded Socials and make money when they  Buy our Products! T&Cs apply</p>
 
                     </div>
 

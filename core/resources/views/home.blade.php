@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Saasbox - Multipurpose HTML Template for Saas &amp; Agency">
+    <meta name="description" content="Fadded Social | Welcome">
     <!-- Title-->
-    <title>Saasbox - Multipurpose HTML Template for Saas &amp; Agency</title>
+    <title>Fadded Social | Welcome</title>
     <!-- Favicon-->
     <link rel="shortcut icon" href="{{url('')}}/assets/front/img/core-img/favicon.ico" type="image/x-icon">
     <!-- All CSS Stylesheet-->
