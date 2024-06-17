@@ -25,6 +25,49 @@
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/fonts/material.css"><!-- [Template CSS Files] -->
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/css/style.css" id="main-style-link">
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/css/style-preset.css">
+
+
+    <style>
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background-color: rgba(63, 138, 127, 0.49);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel-buttons button:hover {
+            background-color: #51b4a7;
+        }
+    </style>
+
 </head><!-- [Head] end --><!-- [Body] Start -->
 <body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-layout="vertical" data-pc-direction="ltr"
       data-pc-theme_contrast="" data-pc-theme="light"><!-- [ Pre-loader ] start -->
@@ -113,7 +156,7 @@
                     </li>
 
                     <li class="pc-item">
-                        <a href="/user/deposit/new" class="pc-link">
+                        <a href="/user/logout" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-logout"></use>
                                 </svg>
                             </span>
@@ -179,7 +222,7 @@
             <div class="ms-auto">
                 <ul class="list-unstyled">
                     <li class="dropdown pc-h-item">
-                        <a href="/login" class="btn btn-dark btn-sm">NGN {{number_format(Auth::user()->balance, 2)}}</a>
+                        <a href="/user/deposit/new" class="btn btn-dark btn-sm">NGN {{number_format(Auth::user()->balance, 2)}}</a>
                     </li>
                 </ul>
             </div>
@@ -188,7 +231,7 @@
             <div class="ms-auto">
                 <ul class="list-unstyled">
                     <li class="dropdown pc-h-item">
-                        <a href="/login" class="btn btn-dark btn-sm">Login</a>
+                        <a href="/user/login" class="btn btn-dark btn-sm"><i class="fa fa-lock"></i></a>
                     </li>
                 </ul>
             </div>

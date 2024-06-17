@@ -94,7 +94,7 @@
 
 
                     <div class="text-center">
-                        <a href="login-v2.html#"
+                        <a href="/"
                         ><img src="<?php echo e(url('')); ?>/assets/assets2/images/logo-dark.svg" alt="img"
                             /></a>
 

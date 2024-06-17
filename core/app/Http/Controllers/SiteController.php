@@ -31,7 +31,7 @@ class SiteController extends Controller
 
         $pageTitle = 'Home';
         $sections = Page::where('tempname',$this->activeTemplate)->where('slug','/')->first();
-        return redirect('/products');
+        return view('home');
     }
 
     public function pages($slug)

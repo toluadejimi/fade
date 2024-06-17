@@ -26,9 +26,64 @@
 
             <div class="dashboard-body__content">
                 <div class="dashboard-body__item-wrapper">
+
+
+                    <div>
+
+
+
+                        <div class="carousel my-3 mb-4">
+                            <div class="carousel-images">
+                                <img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner1.jpg" alt="Banner 1">
+                                <img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner2.jpg" alt="Banner 2">
+                                <img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner3.jpg" alt="Banner 3">
+                                <img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner4.jpg" alt="Banner 4">
+                                <img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner5.jpg" alt="Banner 5">
+                            </div>
+                            <div class="carousel-buttons">
+                                <button id="prevBtn">&#10094;</button>
+                                <button id="nextBtn">&#10095;</button>
+                            </div>
+                        </div>
+
+
+
+                        <script>
+                            const carouselImages = document.querySelector('.carousel-images');
+                            const images = document.querySelectorAll('.carousel-images img');
+                            const totalImages = images.length;
+                            let currentIndex = 0;
+
+                            function showNextImage() {
+                                currentIndex = (currentIndex + 1) % totalImages;
+                                updateCarousel();
+                            }
+
+                            function showPreviousImage() {
+                                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                                updateCarousel();
+                            }
+
+                            function updateCarousel() {
+                                const translateX = -currentIndex * 100;
+                                carouselImages.style.transform = `translateX(${translateX}%)`;
+                            }
+
+                            document.getElementById('nextBtn').addEventListener('click', showNextImage);
+                            document.getElementById('prevBtn').addEventListener('click', showPreviousImage);
+
+                            setInterval(showNextImage, 3000);
+                        </script>
+
+
+
+
+                    </div>
+
                     <div class="">
+
                         <div>
-                            <h5 class="d-flex justify-content-start">Explore Product 👌</h5>
+                            <h5 class="d-flex justify-content-start mt-5">Our Recent Products 👌</h5>
                         </div>
                         <div class="col-12">
                             @forelse($categories as $category)
