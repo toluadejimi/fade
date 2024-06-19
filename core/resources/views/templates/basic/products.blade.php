@@ -35,7 +35,7 @@
                         <div class="carousel my-3 mb-4">
                             <div class="carousel-images">
                                 <a href="/products"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner1.jpg" alt="Banner 1"></a>
-                                <a href="https://t.me/faddedsocialsteam"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner2.jpg" alt="Banner 2"></a>
+                                <a href="https://t.me/faddedsocialsgroup"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner2.jpg" alt="Banner 2"></a>
                                 <a href="https://t.me/faddedsocialsteam"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner3.jpg" alt="Banner 3"></a>
                                 <a href="https://chat.whatsapp.com/CuSck16moiWFH8njS7pE7C"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner4.jpg" alt="Banner 4"></a>
                                 <a href="/products"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner5.jpg" alt="Banner 5"></a>
