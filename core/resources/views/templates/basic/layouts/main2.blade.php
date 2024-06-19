@@ -30,19 +30,24 @@
     <style>
         .carousel {
             position: relative;
-            max-width: 100%;
-            margin: auto;
             overflow: hidden;
+            width: 100%;
         }
 
         .carousel-images {
             display: flex;
             transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .carousel-images a {
+            flex: 0 0 100%;
+            text-align: center;
         }
 
         .carousel-images img {
             width: 100%;
-            max-width: 100%;
+            height: auto;
         }
 
         .carousel-buttons {
@@ -55,16 +60,15 @@
         }
 
         .carousel-buttons button {
-            background-color: rgba(63, 138, 127, 0.49);
-            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
-            font-size: 18px;
+            border: none;
             padding: 10px;
             cursor: pointer;
         }
 
         .carousel-buttons button:hover {
-            background-color: #51b4a7;
+            background-color: rgba(0, 0, 0, 0.8);
         }
     </style>
 
