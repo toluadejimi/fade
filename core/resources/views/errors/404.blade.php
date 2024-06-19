@@ -9,16 +9,16 @@
     <meta name="author" content="DexignZone" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
-    <meta name="description" content="LOGGPLUG STORE"/>
-    <meta property="og:title" content="LOGGPLUG STORE" />
-    <meta property="og:description" content="LOGGPLUG STORE" />
+    <meta name="description" content="FADDED STORE"/>
+    <meta property="og:title" content="FADDED STORE" />
+    <meta property="og:description" content="FADDED STORE" />
     <meta property="og:image" content="https://makaanlelo.com/tf_products_007/foodia/xhtml/social-image.png"/>
     <meta name="format-detection" content="telephone=no">
 
     <!-- Favicons Icon -->
 
     <!-- Title -->
-    <title>LOGGPLUG STORE</title>
+    <title>FADDED STORE</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="{{ url('') }}/assets/assets/css/style.css">
