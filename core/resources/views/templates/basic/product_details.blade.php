@@ -85,7 +85,7 @@
                                     onclick="decrementQuantity()">-
                             </button>
 
-                            <input type="number" id="quantity" class="input-quantity" value="1" min="1">
+                            <input style="width: 50px; text-align: center; border-radius: 10px"  type="number" id="quantity" class="input-quantity" value="1" min="1">
 
 
                             <button style="background-color: #20ccb4; color: white" class="btn"
