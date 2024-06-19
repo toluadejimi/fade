@@ -180,7 +180,7 @@
 
 
                         <li class="pc-item">
-                            <a href="/change-password" class="pc-link">
+                            <a href="/user/change-password" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-shopping-bag"></use>
                                 </svg>
                             </span>

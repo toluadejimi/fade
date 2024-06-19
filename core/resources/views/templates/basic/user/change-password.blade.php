@@ -22,7 +22,7 @@
                 </div>
             @endif
 
-            <form action="{{ route('user.deposit.insert') }}" method="POST">
+            <form action="change-password" method="POST">
                 @csrf
 
                 <div class="dashboard-body__content">
