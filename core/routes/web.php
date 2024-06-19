@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProxyController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/clear', function(){
@@ -13,6 +14,7 @@ Route::get('/proxy', [ProxyController::class, 'proxy']);
 Route::get('verify', 'Gateway\Enkpay\ProcessController@ipn')->name('enkpay');
 
 
+Route::any('change-password', [SiteController::class, 'chnage_password']);
 
 
 
