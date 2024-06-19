@@ -84,10 +84,63 @@
                             <button style="background-color: #4d4d4d; color: white" class="btn"
                                     onclick="decrementQuantity()">-
                             </button>
-                            <span class="p-2" id="quantity">1</span>
+
+                            <input type="number" id="quantity" class="input-quantity" value="1" min="1">
+
+
                             <button style="background-color: #20ccb4; color: white" class="btn"
                                     onclick="incrementQuantity()">+
                             </button>
+
+
+                            <script>
+                                // Variables to track quantity and price
+                                let quantity = 1;
+                                const price = {{ $product->price }}; // Assuming you have a value here from your server-side rendering
+
+                                // Functions to increment and decrement quantity
+                                function incrementQuantity() {
+                                    quantity++;
+                                    updateView();
+                                }
+
+                                function decrementQuantity() {
+                                    if (quantity > 1) {
+                                        quantity--;
+                                    } else {
+                                        quantity = 1; // Prevents quantity from going below 1
+                                    }
+                                    updateView();
+                                }
+
+                                // Function to update the view with new quantity and total
+                                function updateView() {
+                                    const quantityElement = document.getElementById("quantity");
+                                    const totalElement = document.getElementById("total");
+
+                                    // Update the input field value
+                                    quantityElement.value = quantity;
+
+                                    // Calculate and update the total price
+                                    const total = (quantity * price).toFixed(2);
+                                    totalElement.textContent = total;
+                                }
+
+                                // Add event listener to the input field to detect changes
+                                document.getElementById("quantity").addEventListener("change", function () {
+                                    // Parse the input value and update quantity
+                                    const inputValue = parseInt(this.value);
+                                    if (!isNaN(inputValue) && inputValue > 0) {
+                                        quantity = inputValue;
+                                    } else {
+                                        quantity = 1; // Reset to 1 if input is invalid
+                                    }
+                                    updateView();
+                                });
+
+                                // Initialize the view
+                                updateView();
+                            </script>
                         </div>
 
                         <div class="col-6 d-flex justify-content-end">
