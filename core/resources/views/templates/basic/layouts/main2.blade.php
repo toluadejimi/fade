@@ -93,102 +93,137 @@
                                 <small>Customer</small>
                             </div>
 
+                        </div>
                     </div>
-                </div>
-                <ul class="pc-navbar">
-                    <li class="pc-item">
-                        <a href="/" class="pc-link">
+                    <ul class="pc-navbar">
+                        <li class="pc-item">
+                            <a href="/" class="pc-link">
 
 
                             <span class="pc-micon">
                                 <svg class="pc-icon"><use xlink:href="#custom-home"></use>
                                 </svg> </span>
-                            <span class="pc-mtext">Dashboard</span>
-                        </a>
-                    </li>
+                                <span class="pc-mtext">Dashboard</span>
+                            </a>
+                        </li>
 
 
-
-                    <li class="pc-item">
-                        <a href="/user/deposit/new" class="pc-link">
+                        <li class="pc-item">
+                            <a href="/user/deposit/new" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-direct-inbox"></use>
                                 </svg>
                             </span>
-                            <span  class="pc-mtext">Fund Wallet</span>
-                        </a>
+                                <span class="pc-mtext">Fund Wallet</span>
+                            </a>
 
-                    </li>
+                        </li>
 
-                    <li class="pc-item">
-                        <a href="/user/orders" class="pc-link">
+                        <li class="pc-item">
+                            <a href="/user/orders" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-bag"></use>
                                 </svg>
                             </span>
-                            <span  class="pc-mtext">My Orders</span>
-                        </a>
+                                <span class="pc-mtext">My Orders</span>
+                            </a>
 
-                    </li>
+                        </li>
 
 
-                    <li class="pc-item">
-                        <a href="/user/deposit/new" class="pc-link">
-                            <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-profile-2user-outline"></use>
+                        <li class="pc-item">
+                            <a href="https://t.me/faddedsocialsteam" class="pc-link">
+                            <span class="pc-micon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_346_411)">
+                                <path
+                                    d="M11.944 0C8.77112 0.014807 5.73324 1.28562 3.4949 3.53446C1.25656 5.78329 -3.4549e-05 8.82708 7.12435e-10 12C7.12441e-10 15.1826 1.26428 18.2348 3.51472 20.4853C5.76516 22.7357 8.8174 24 12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0L11.944 0ZM16.906 7.224C17.006 7.222 17.227 7.247 17.371 7.364C17.4672 7.44672 17.5283 7.5629 17.542 7.689C17.558 7.782 17.578 7.995 17.562 8.161C17.382 10.059 16.6 14.663 16.202 16.788C16.034 17.688 15.703 17.989 15.382 18.018C14.686 18.083 14.157 17.558 13.482 17.116C12.426 16.423 11.829 15.992 10.804 15.316C9.619 14.536 10.387 14.106 11.062 13.406C11.239 13.222 14.309 10.429 14.369 10.176C14.376 10.144 14.383 10.026 14.313 9.964C14.243 9.902 14.139 9.923 14.064 9.94C13.958 9.96467 12.271 11.0797 9.003 13.285C8.523 13.615 8.089 13.775 7.701 13.765C7.273 13.757 6.449 13.524 5.836 13.325C5.084 13.08 4.487 12.951 4.539 12.536C4.56567 12.32 4.86333 12.099 5.432 11.873C8.93 10.349 11.2627 9.34433 12.43 8.859C15.762 7.473 16.455 7.232 16.906 7.224Z"
+                                    fill="#919295"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_346_411">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
                                 </svg>
+
                             </span>
-                            <span  class="pc-mtext">Support</span>
-                        </a>
+                                <span class="pc-mtext">Support</span>
+                            </a>
 
-                    </li>
-
-
-
-                    <hr class="text-muted">
+                        </li>
 
 
-                    <li class="pc-item">
-                        <a href="/user/deposit/new" class="pc-link">
+                        <li class="pc-item">
+                            <a href="https://chat.whatsapp.com/CuSck16moiWFH8njS7pE7C" class="pc-link">
+                            <span class="pc-micon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_346_414" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                <path d="M0.5 0.5H19.5V19.5H0.5V0.5Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_346_414)">
+                                <path
+                                    d="M11.79 0.640019L11.22 0.560019C9.50693 0.312676 7.75885 0.557374 6.17954 1.26558C4.60023 1.97379 3.25476 3.11634 2.3 4.56002C1.28416 5.94 0.678585 7.57876 0.552979 9.28771C0.427373 10.9967 0.786836 12.7063 1.59 14.22C1.6722 14.3717 1.72337 14.5383 1.74054 14.71C1.75771 14.8817 1.74053 15.055 1.69 15.22C1.28 16.63 0.9 18.05 0.5 19.54L1 19.39C2.35 19.03 3.7 18.67 5.05 18.34C5.33494 18.2808 5.63112 18.3087 5.9 18.42C7.1112 19.0111 8.43482 19.3363 9.78205 19.3738C11.1293 19.4113 12.4689 19.1601 13.7111 18.6372C14.9533 18.1144 16.0692 17.3318 16.9841 16.3421C17.899 15.3525 18.5915 14.1785 19.0153 12.8992C19.4392 11.6198 19.5844 10.2646 19.4414 8.92442C19.2983 7.58429 18.8703 6.29026 18.1859 5.12917C17.5016 3.96809 16.5769 2.96681 15.4737 2.19254C14.3706 1.41827 13.1146 0.888923 11.79 0.640019ZM14.31 13.76C13.9466 14.0854 13.5034 14.3087 13.0256 14.407C12.5478 14.5054 12.0524 14.4754 11.59 14.32C9.49456 13.73 7.67661 12.4152 6.46 10.61C5.99528 9.97154 5.6217 9.27149 5.35 8.53002C5.20285 8.09979 5.17632 7.63749 5.27327 7.19325C5.37023 6.74902 5.58698 6.33981 5.9 6.01002C6.05239 5.81553 6.25981 5.67145 6.49526 5.59654C6.7307 5.52162 6.98325 5.51935 7.22 5.59002C7.42 5.64002 7.56 5.93002 7.74 6.15002C7.886 6.56302 8.057 6.96702 8.25 7.36002C8.39642 7.56053 8.45758 7.81082 8.42011 8.05626C8.38263 8.30169 8.24958 8.52234 8.05 8.67002C7.6 9.07002 7.67 9.40002 7.99 9.85002C8.69745 10.8692 9.6736 11.6723 10.81 12.17C11.13 12.31 11.37 12.34 11.58 12.01C11.67 11.88 11.79 11.77 11.89 11.65C12.47 10.92 12.29 10.93 13.21 11.33C13.503 11.453 13.787 11.597 14.06 11.76C14.33 11.92 14.74 12.09 14.8 12.33C14.8577 12.5904 14.8425 12.8616 14.7561 13.1139C14.6696 13.3662 14.5153 13.5898 14.31 13.76Z"
+                                    fill="#919295"/>
+                                </g>
+                                </svg>
+
+
+                            </span>
+                                <span class="pc-mtext">Join our community</span>
+                            </a>
+
+                        </li>
+
+
+                        <hr class="text-muted">
+
+
+                        <li class="pc-item">
+                            <a href="/user/deposit/new" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-shopping-bag"></use>
                                 </svg>
                             </span>
-                            <span  class="pc-mtext">Change Password</span>
-                        </a>
+                                <span class="pc-mtext">Change Password</span>
+                            </a>
 
-                    </li>
+                        </li>
 
-                    <li class="pc-item">
-                        <a href="/user/logout" class="pc-link">
+                        <li class="pc-item">
+                            <a href="/user/logout" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-logout"></use>
                                 </svg>
                             </span>
-                            <span  class="pc-mtext">Log Out</span>
-                        </a>
+                                <span class="pc-mtext">Log Out</span>
+                            </a>
 
-                    </li>
+                        </li>
 
-                </ul>
-            </div>
-        @else
+                    </ul>
+                </div>
+                @else
 
-            <div class="navbar-content">
-                <div class="card pc-user-card">
+                    <div class="navbar-content">
+                        <div class="card pc-user-card">
 
 
-                    <div class="card">
-                        <div class="card-body">
-                            <a style="background: #20CCB4FF; border: 0px" href="/user/login" class="btn btn-dark btn-lg w-100 my-">Login</a>
+                            <div class="card">
+                                <div class="card-body">
+                                    <a style="background: #20CCB4FF; border: 0px" href="/user/login"
+                                       class="btn btn-dark btn-lg w-100 my-">Login</a>
 
-                            <a href="/user/register" class="btn btn-dark btn-lg w-100 my-3">Register</a>
+                                    <a href="/user/register" class="btn btn-dark btn-lg w-100 my-3">Register</a>
+                                </div>
+
+
+                            </div>
+
                         </div>
-
 
                     </div>
 
-                </div>
-
+                @endauth
             </div>
-
-        @endauth
-    </div>
 </nav><!-- [ Sidebar Menu ] end --><!-- [ Header Topbar ] start -->
 
 
@@ -222,7 +257,8 @@
             <div class="ms-auto">
                 <ul class="list-unstyled">
                     <li class="dropdown pc-h-item">
-                        <a href="/user/deposit/new" class="btn btn-dark btn-sm">NGN {{number_format(Auth::user()->balance, 2)}}</a>
+                        <a href="/user/deposit/new"
+                           class="btn btn-dark btn-sm">NGN {{number_format(Auth::user()->balance, 2)}}</a>
                     </li>
                 </ul>
             </div>
