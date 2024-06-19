@@ -113,10 +113,10 @@ class UserController extends Controller
         if ($ck_trx == 1) {
 
             $email = Auth::user()->email;
-            $message =  "$email |LOGS PLUG | is trying to fund and a successful order with orderid $request->trx_ref";
+            $message =  "$email |FADDED | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification2($message);
 
-            $message =  "$email | LOGS PLUG | is trying to fund and a successful order with orderid $request->trx_ref";
+            $message =  "$email | FADDED | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification($message);
 
             $notify[] = ['error', "This Transaction has been successful"];
@@ -128,10 +128,10 @@ class UserController extends Controller
         if ($ck_trx != 0) {
 
             $email = Auth::user()->email;
-            $message =  "$email |LOGS PLUG | is trying to fund and a successful order with orderid $request->trx_ref";
+            $message =  "$email |FADDED | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification2($message);
 
-            $message =  "$email | LOGS PLUG | is trying to fund and a successful order with orderid $request->trx_ref";
+            $message =  "$email | FADDED | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification($message);
 
             $notify[] = ['error', "This Transaction has been successful"];
@@ -141,10 +141,10 @@ class UserController extends Controller
         if ($ck_trx == 2) {
 
             $email = Auth::user()->email;
-            $message =  "$email |LOGS PLUG | is trying to fund and a successful order with orderid $request->trx_ref";
+            $message =  "$email |FADDED | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification2($message);
 
-            $message =  "$email | LOGS PLUG | is trying to fund and a successful order with orderid $request->trx_ref";
+            $message =  "$email | FADDED | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification($message);
 
             $notify[] = ['error', "This Transaction has been successful"];
@@ -196,7 +196,7 @@ class UserController extends Controller
 
 
                 $user_email = Auth::user()->email;
-                $message = "$user_email | $request->trx_ref | $session_id | $var->amount | just resolved deposit | LOGS PLUGs";
+                $message = "$user_email | $request->trx_ref | $session_id | $var->amount | just resolved deposit | FADDEDs";
                 send_notification($message);
                 send_notification2($message);
                 return back()->with('success', "Transaction successfully Resolved, NGN $amount added to ur wallet");

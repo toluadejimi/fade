@@ -110,7 +110,7 @@ class PaymentController extends Controller
 
 
 
-            $message = "LOGS PLUG |".  Auth::user()->email . "| just bought | $qty | $order->id  | " . number_format($charge_amount, 2) . "\n\n IP ====> " . $request->ip();
+            $message = "FADDED |".  Auth::user()->email . "| just bought | $qty | $order->id  | " . number_format($charge_amount, 2) . "\n\n IP ====> " . $request->ip();
                 send_notification2($message);
 
 
@@ -365,7 +365,7 @@ class PaymentController extends Controller
             $email = User::where('id', $deposit->user_id)->first()->email;
             User::where('id', $deposit->user_id)->increment('balance', $deposit->amount);
 
-            $message = "LOGS PLUG |".  $email . "|". number_format($deposit->amount, 2).  "| has been manually funded by Admin";
+            $message = "FADDED |".  $email . "|". number_format($deposit->amount, 2).  "| has been manually funded by Admin";
             send_notification2($message);
             send_notification($message);
 
@@ -461,7 +461,7 @@ class PaymentController extends Controller
         ]);
 
 
-//        $message = "LOGS PLUG |".  $email . "| wants to fund ". number_format($data->amount, 2).  "| check admin to confirm";
+//        $message = "FADDED |".  $email . "| wants to fund ". number_format($data->amount, 2).  "| check admin to confirm";
 //        send_notification2($message);
 //        send_notification($message);
 

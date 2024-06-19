@@ -7,40 +7,11 @@
             <div class="container">
                 <div class="row gy-4 mt-3">
                     <div class="col-xl-12 col-sm-12">
-                        <div class="row align-items-end mb-4">
-                            <div class="col-xl-8 col-md-9">
-                                <div class="card border-0 p-2 mb-4">
-                                    <div class="card-body">
-                                        <div class="account-info mb-2">
-                            <span
-                                class="fw-bold">@lang('Category:')</span> {{ @$orderItems->first()->product->category->name }}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card border-0 p-2">
-                                    <div class="card-body">
-                                        <div class="account-info">
-                                    <span
-                                        class="fw-bold">@lang('Product:')</span> {{ @$orderItems->first()->product->name }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {{--            <div class="col-xl-4 col-md-3">--}}
-                            {{--                <div class="account-info-btn text-end">--}}
-                            {{--                    <a href="{{ route('user.orders') }}" class="btn btn--base">@lang('Back')</a>--}}
-                            {{--                </div>--}}
-                            {{--            </div>--}}
-
-
-                        </div>
 
                         <div class="row my-3">
                             <div class="col d-flex justify-content-end">
                                 <a href="/user/copy/{{$get_id}}" class="btn btn-main btn-sm pill p-3"><i
-                                        class="fa fa-copy"></i> Copy all</a>
+                                        class="fa fa-copy"></i>Download</a>
                             </div>
                         </div>
 

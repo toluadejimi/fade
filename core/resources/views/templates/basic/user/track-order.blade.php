@@ -10,9 +10,9 @@
     <meta name="author" content="DexignZone" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
-    <meta name="description" content="LOGS PLUG"/>
-    <meta property="og:title" content="LOGS PLUG" />
-    <meta property="og:description" content="LOGS PLUG" />
+    <meta name="description" content="FADDED"/>
+    <meta property="og:title" content="FADDED" />
+    <meta property="og:description" content="FADDED" />
     <meta property="og:image" content="https://makaanlelo.com/tf_products_007/foodia/xhtml/social-image.png"/>
     <meta name="format-detection" content="telephone=no">
 
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{url('')}}/assets/assets/images/favicon.png" />
 
     <!-- Title -->
-    <title>LOGS PLUG</title>
+    <title>FADDED</title>
 
 
     <!-- Stylesheets -->
