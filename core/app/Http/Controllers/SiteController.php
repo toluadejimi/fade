@@ -27,19 +27,6 @@ class SiteController extends Controller
 
 
 
-    public function chnage_password(request $request)
-    {
-
-        if($request->password != $request->confirm_password){
-            return back()->with('error', "Password must be same");
-        }
-
-        $password = bcrypt($request->password);
-        User::where('id', Auth::id())->update(['password' => $password]);
-
-        return back()->with('message', 'Password updated successfully');
-
-    }
 
 
 

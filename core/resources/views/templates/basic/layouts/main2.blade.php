@@ -180,7 +180,7 @@
 
 
                         <li class="pc-item">
-                            <a href="/user/deposit/new" class="pc-link">
+                            <a href="{{route('change.password')}}" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-shopping-bag"></use>
                                 </svg>
                             </span>

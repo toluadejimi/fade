@@ -13,6 +13,22 @@ class ProfileController extends Controller
 {
 
 
+    public function submitPassword(request $request)
+    {
+
+        if($request->password != $request->confirm_password){
+            return back()->with('error', "Password must be same");
+        }
+
+        $password = bcrypt($request->password);
+        User::where('id', Auth::id())->update(['password' => $password]);
+
+        return back()->with('message', 'Password updated successfully');
+
+    }
+
+
+
     public function profile_view()
     {
         $pageTitle = "Profile";
@@ -64,32 +80,32 @@ class ProfileController extends Controller
     public function changePassword()
     {
         $pageTitle = 'Change Password';
-        return view($this->activeTemplate . 'user.password', compact('pageTitle'));
+        return view($this->activeTemplate . 'user.change-password', compact('pageTitle'));
     }
 
-    public function submitPassword(Request $request)
-    {
-
-        $passwordValidation = Password::min(6);
-        if (gs('secure_password')) {
-            $passwordValidation = $passwordValidation->mixedCase()->numbers()->symbols()->uncompromised();
-        }
-
-        $this->validate($request, [
-            'current_password' => 'required',
-            'password' => ['required','confirmed',$passwordValidation]
-        ]);
-
-        $user = auth()->user();
-        if (Hash::check($request->current_password, $user->password)) {
-            $password = Hash::make($request->password);
-            $user->password = $password;
-            $user->save();
-            return redirect('/')->with('message','Password changes successfully');
-
-        } else {
-            $notify = "The password doesn\'t match!";
-            return back()->with('error', $notify);
-        }
-    }
+//    public function submitPassword(Request $request)
+//    {
+//
+//        $passwordValidation = Password::min(6);
+//        if (gs('secure_password')) {
+//            $passwordValidation = $passwordValidation->mixedCase()->numbers()->symbols()->uncompromised();
+//        }
+//
+//        $this->validate($request, [
+//            'current_password' => 'required',
+//            'password' => ['required','confirmed',$passwordValidation]
+//        ]);
+//
+//        $user = auth()->user();
+//        if (Hash::check($request->current_password, $user->password)) {
+//            $password = Hash::make($request->password);
+//            $user->password = $password;
+//            $user->save();
+//            return redirect('/')->with('message','Password changes successfully');
+//
+//        } else {
+//            $notify = "The password doesn\'t match!";
+//            return back()->with('error', $notify);
+//        }
+//    }
 }
