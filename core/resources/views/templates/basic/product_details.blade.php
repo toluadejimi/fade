@@ -161,7 +161,7 @@
                         {{--                <input class="form-control mb-3" name="coupon_code" type="text"--}}
                         {{--                       placeholder="Enter Coupon Code">--}}
 
-                        <input type="text" hidden id="quantityInput" name="qty" value="1">
+                        <input type="text" hidden id="quantity" name="qty" value="1">
                         <input type="text" hidden name="id" value="{{$product->id}}">
                         <input type="text" hidden type="text" name="payment" value="wallet">
                         <input type="text" hidden name="gateway" value="250">
