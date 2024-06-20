@@ -279,46 +279,46 @@
     Scripts
     ***********************************-->
 
-    <script>
-        // Variables to track quantity and price
-        let quantity = 1;
-        const price = {{ $product->price }};
+{{--    <script>--}}
+{{--        // Variables to track quantity and price--}}
+{{--        let quantity = 1;--}}
+{{--        const price = {{ $product->price }};--}}
 
-        // Functions to increment and decrement quantity
-        function incrementQuantity() {
-            quantity++;
-            updateView();
-        }
+{{--        // Functions to increment and decrement quantity--}}
+{{--        function incrementQuantity() {--}}
+{{--            quantity++;--}}
+{{--            updateView();--}}
+{{--        }--}}
 
-        function decrementQuantity() {
-            if (quantity > 1) {
-                quantity--;
-                updateView();
-            }
-        }
+{{--        function decrementQuantity() {--}}
+{{--            if (quantity > 1) {--}}
+{{--                quantity--;--}}
+{{--                updateView();--}}
+{{--            }--}}
+{{--        }--}}
 
-        // Function to update the view with new quantity and total
-        function updateView() {
-            const quantityElement = document.getElementById("quantity");
-            const totalElement = document.getElementById("total");
-            const quantityInput = document.getElementById("quantityInput");
+{{--        // Function to update the view with new quantity and total--}}
+{{--        function updateView() {--}}
+{{--            const quantityElement = document.getElementById("quantity");--}}
+{{--            const totalElement = document.getElementById("total");--}}
+{{--            const quantityInput = document.getElementById("quantityInput");--}}
 
-            const total = (quantity * price).toFixed(2);
+{{--            const total = (quantity * price).toFixed(2);--}}
 
-            quantityElement.textContent = quantity;
-            totalElement.textContent = total;
-            quantityInput.value = quantity;
-        }
+{{--            quantityElement.textContent = quantity;--}}
+{{--            totalElement.textContent = total;--}}
+{{--            quantityInput.value = quantity;--}}
+{{--        }--}}
 
-        // Function to submit quantity to the server
-        function submitQuantity() {
-            const quantityInput = document.getElementById("quantityInput");
-            alert("Quantity submitted: " + quantityInput.value);
-            // You can send the quantityInput.value to the server here
-        }
+{{--        // Function to submit quantity to the server--}}
+{{--        function submitQuantity() {--}}
+{{--            const quantityInput = document.getElementById("quantityInput");--}}
+{{--            alert("Quantity submitted: " + quantityInput.value);--}}
+{{--            // You can send the quantityInput.value to the server here--}}
+{{--        }--}}
 
-        // Initialize the view
-        updateView();
-    </script>
+{{--        // Initialize the view--}}
+{{--        updateView();--}}
+{{--    </script>--}}
 
 @endsection
