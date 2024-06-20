@@ -56,6 +56,11 @@
             </div>
 
             <div class="dashboard-body__item my-2">
+
+                <form action="{{ route('user.deposit.insert') }}" method="POST">
+                    @csrf
+
+
                 <div class="">
                     <div class="detail-content">
                         <div class="flex-1">
@@ -85,8 +90,7 @@
                                     onclick="decrementQuantity()">-
                             </button>
 
-                            <input style="width: 50px; text-align: center; border-radius: 10px"  type="number" id="quantity" class="input-quantity" value="1" min="1">
-
+                            <input name="qty" style="width: 50px;  text-align: center; border-radius: 10px"  type="number" id="quantity" class="input-quantity" value="1" min="1">
 
                             <button style="background-color: #20ccb4; color: white" class="btn"
                                     onclick="incrementQuantity()">+
@@ -155,13 +159,11 @@
 
 
 
-                    <form action="{{ route('user.deposit.insert') }}" method="POST">
-                        @csrf
+
                         {{--                <h6 class="">Have a coupon?</h6>--}}
                         {{--                <input class="form-control mb-3" name="coupon_code" type="text"--}}
                         {{--                       placeholder="Enter Coupon Code">--}}
 
-                        <input type="text" hidden id="quantity" name="qty" value="1">
                         <input type="text" hidden name="id" value="{{$product->id}}">
                         <input type="text" hidden type="text" name="payment" value="wallet">
                         <input type="text" hidden name="gateway" value="250">
