@@ -48,12 +48,6 @@
                                             depends on how it’s used. No replacement or refund for an account
                                             suspended/disabled/logged out after a successful login.
                                         </li>
-                                        <hr>
-                                        <li>Purchase an account only if you understand how to use it. Refunds will not
-                                            be given if you buy something and don't know how to use it. The best we can
-                                            do is to give you tips
-                                        </li>
-
 
                                     </ul>
 

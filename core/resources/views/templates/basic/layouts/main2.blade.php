@@ -101,9 +101,7 @@
                     </div>
                     <ul class="pc-navbar">
                         <li class="pc-item">
-                            <a href="/" class="pc-link">
-
-
+                            <a href="/products" class="pc-link">
                             <span class="pc-micon">
                                 <svg class="pc-icon"><use xlink:href="#custom-home"></use>
                                 </svg> </span>
@@ -155,6 +153,31 @@
                             </a>
 
                         </li>
+
+
+                        <li class="pc-item">
+                            <a href="/rules" class="pc-link">
+                            <span class="pc-micon">
+                                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_39_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="48" height="42">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 5L2 43H46L24 5Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+                                <path d="M24 35V36M24 19L24.008 29" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                                </mask>
+                                <g mask="url(#mask0_39_2)">
+                                <path d="M0 0H48V48H0V0Z" fill="#878787"/>
+                                </g>
+                                </svg>
+
+
+                            </span>
+                                <span class="pc-mtext">Rules</span>
+                            </a>
+
+                        </li>
+
+
+
+
 
 
                         <li class="pc-item">
