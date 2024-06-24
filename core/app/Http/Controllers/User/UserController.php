@@ -317,7 +317,7 @@ class UserController extends Controller
     }
 
 
-    public function termofuse(Request $request)
+    public function terms(Request $request)
     {
 
         return view($this->activeTemplate . 'user.terms');
