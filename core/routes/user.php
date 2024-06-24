@@ -69,6 +69,9 @@ Route::middleware('auth')->name('user.')->group(function () {
                 Route::any('deposit/new', 'depositNew')->name('deposit.new');
                 Route::any('resolve-deposit', 'resloveDeposit')->name('resolve.deposit');
                 Route::any('rules', 'rules')->name('user.rules');
+                Route::any('termofuse', 'terms')->name('user.termofuse');
+
+
                 Route::any('why', 'why')->name('user.why');
 
 

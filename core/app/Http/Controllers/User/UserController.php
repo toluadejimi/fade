@@ -316,6 +316,16 @@ class UserController extends Controller
 
     }
 
+
+    public function termofuse(Request $request)
+    {
+
+        return view($this->activeTemplate . 'user.terms');
+
+    }
+
+
+
     public function why(Request $request)
     {
 

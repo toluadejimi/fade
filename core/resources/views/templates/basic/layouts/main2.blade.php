@@ -158,10 +158,14 @@
                         <li class="pc-item">
                             <a href="/user/rules" class="pc-link">
                             <span class="pc-micon">
-                                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_39_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="48" height="42">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 5L2 43H46L24 5Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
-                                <path d="M24 35V36M24 19L24.008 29" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                                <svg width="24" height="24" viewBox="0 0 48 48" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_39_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="3"
+                                      width="48" height="42">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 5L2 43H46L24 5Z" fill="white"
+                                      stroke="white" stroke-width="4" stroke-linejoin="round"/>
+                                <path d="M24 35V36M24 19L24.008 29" stroke="black" stroke-width="4"
+                                      stroke-linecap="round"/>
                                 </mask>
                                 <g mask="url(#mask0_39_2)">
                                 <path d="M0 0H48V48H0V0Z" fill="#878787"/>
@@ -176,8 +180,22 @@
                         </li>
 
 
+                        <li class="pc-item">
+                            <a href="/user/termofuse" class="pc-link">
+                            <span class="pc-micon">
+                                <svg width="24" height="24" viewBox="0 0 18 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5"
+                                      d="M0 8C0 4.229 -1.19209e-07 2.343 1.172 1.172C2.343 -1.19209e-07 4.229 0 8 0H10C13.771 0 15.657 -1.19209e-07 16.828 1.172C18 2.343 18 4.229 18 8V12C18 15.771 18 17.657 16.828 18.828C15.657 20 13.771 20 10 20H8C4.229 20 2.343 20 1.172 18.828C-1.19209e-07 17.657 0 15.771 0 12V8Z"
+                                      fill="#878787"/>
+                                </svg>
 
 
+                            </span>
+                                <span class="pc-mtext"> Terms Of Use</span>
+                            </a>
+
+                        </li>
 
 
                         <li class="pc-item">
@@ -185,7 +203,8 @@
                             <span class="pc-micon">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_346_414" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                <mask id="mask0_346_414" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                      y="0" width="20" height="20">
                                 <path d="M0.5 0.5H19.5V19.5H0.5V0.5Z" fill="white"/>
                                 </mask>
                                 <g mask="url(#mask0_346_414)">
