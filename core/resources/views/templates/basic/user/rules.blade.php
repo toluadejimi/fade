@@ -1,4 +1,4 @@
-@extends($activeTemplate.'layouts.main')
+@extends($activeTemplate.'layouts.main2')
 @section('content')
 
     <div class="row justify-content-center">
@@ -12,7 +12,7 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h5> RULES AT LOGGS PLUG</h5>
+                                    <h5> RULES AT FADDED SOCIAL</h5>
 
                                     <ul>
 

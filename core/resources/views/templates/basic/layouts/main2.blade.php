@@ -156,7 +156,7 @@
 
 
                         <li class="pc-item">
-                            <a href="/rules" class="pc-link">
+                            <a href="/user/rules" class="pc-link">
                             <span class="pc-micon">
                                 <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_39_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="48" height="42">
