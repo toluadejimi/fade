@@ -223,6 +223,7 @@ class PaymentController extends Controller
                 $item->product_id = $product->id;
                 $item->product_detail_id = $unsoldProductDetails[$i]->id;
                 $item->price = $product->price;
+                $item->name = $product->name;
                 $item->save();
             }
 
@@ -305,6 +306,7 @@ class PaymentController extends Controller
             $item->product_id = $product->id;
             $item->product_detail_id = $unsoldProductDetails[$i]->id;
             $item->price = $product->price;
+            $item->name = $product->name;
             $item->save();
         }
 
