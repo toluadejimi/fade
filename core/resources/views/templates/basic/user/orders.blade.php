@@ -91,7 +91,7 @@
                                         </td>
 
                                         <td>
-                                            <span>{{ @$order->orderItems->name ?? "Product Name" }}</span>
+                                            <span>{{ @$order->name ?? "Product Name" }}</span>
                                         </td>
 
                                         <td>

@@ -196,6 +196,8 @@ class PaymentController extends Controller
             $order = new Order();
             $order->user_id = $user->id;
             $order->total_amount = $amount;
+            $order->name = $product->name;
+
             $order->save();
 
             $data = new Deposit();
@@ -279,6 +281,8 @@ class PaymentController extends Controller
         $order = new Order();
         $order->user_id = $user->id;
         $order->total_amount = $amount;
+        $order->name = $product->name;
+
         $order->save();
 
         $data = new Deposit();
