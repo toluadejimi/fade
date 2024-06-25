@@ -25,6 +25,9 @@ class PaymentController extends Controller
 
 
 
+
+
+
         if($request->payment == "wallet"){
             $qty = $request->qty;
 
@@ -82,6 +85,7 @@ class PaymentController extends Controller
             $order->user_id = Auth::id();
             $order->total_amount = $charge_amount;
             $order->status = 1;
+            $order->name = $product->name;
             $order->save();
 
             $unsoldProductDetails = $product->unsoldProductDetails;
@@ -96,6 +100,7 @@ class PaymentController extends Controller
                     $item->product_id = $product->id;
                     $item->product_detail_id = $unsoldProductDetails[$i]->id;
                     $item->price = $product->price;
+                    $order->name = $product->name;
                     $item->save();
 
 
@@ -173,6 +178,8 @@ class PaymentController extends Controller
 
             }
 
+
+
             $amount = ($product->price * $qty);
 
             $user = auth()->user();
@@ -238,6 +245,8 @@ class PaymentController extends Controller
 
 
         }
+
+        dd($product->price);
 
         $request->validate([
             'gateway' => 'required',
