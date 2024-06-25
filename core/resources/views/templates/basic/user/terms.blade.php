@@ -28,7 +28,9 @@
                                             </b>
 
 
-                                            <h4>MOST RECOMMENDED VPN FOR FACEBOOK: SURFSHARK AND HMA VPN</h4>
+                                            <br>
+                                            <br>
+                                            <h6>MOST RECOMMENDED VPN FOR FACEBOOK: SURFSHARK AND HMA VPN</h6>
 
                                             <li>Customer must unlock a locked account linked to email for unlock, if 1not linked to email to unlock we will replace it.</li>
 
@@ -39,9 +41,10 @@
                                             <hr>
 
 
-                                            <h4>POV- DO NOT USE SAFARI BROWSER TO LOGIN ANY ACCOUNT YOU PURCHASE ON THIS SITE
+                                            <h6>POV- DO NOT USE SAFARI BROWSER TO LOGIN ANY ACCOUNT YOU PURCHASE ON THIS SITE
                                                 -DO NOT EVER USE APP FOR FIRST LOGIN
-                                            </h4>
+                                            </h6>
+
 
                                             <li>The full validity of the account (within 24 hours after the purchase), if no rule was broken )
                                             </li>
