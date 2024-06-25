@@ -87,12 +87,14 @@
                                         </td>
 
                                         <td>
-                                            <span>{{ @$order->orderItems->count() }}</span>
+                                            <span>{{ @$order->name ?? "Product Name" }}</span>
                                         </td>
 
                                         <td>
-                                            <span>{{ @$order->name ?? "Product Name" }}</span>
+                                            <span>{{ @$order->orderItems->count() }} Pcs</span>
                                         </td>
+
+
 
                                         <td>
                                             {{showAmount($order->total_amount)}}
