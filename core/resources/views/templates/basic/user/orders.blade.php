@@ -64,6 +64,7 @@
                                 <thead>
                                 <tr>
                                     <th>Order ID</th>
+                                    <th>Products</th>
                                     <th>Qty</th>
                                     <th>Amount(NGN)</th>
                                     <th>Date</th>
@@ -84,9 +85,15 @@
                                                 {{ $order->id }} | View Order
                                             </a>
                                         </td>
+
                                         <td>
                                             <span>{{ @$order->orderItems->count() }}</span>
                                         </td>
+
+                                        <td>
+                                            <span>{{ @$order->orderItems->name ?? "Product Name" }}</span>
+                                        </td>
+
                                         <td>
                                             {{showAmount($order->total_amount)}}
                                         </td>
