@@ -85,7 +85,7 @@
 
                             <button type="submit"
                                     style="background: #20CCB4FF; border: 0px; color: white"
-                                    class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm"><?php echo app('translator')->get('Contine'); ?>
+                                    class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm"><?php echo app('translator')->get('Continue'); ?>
 
 
                         </div>

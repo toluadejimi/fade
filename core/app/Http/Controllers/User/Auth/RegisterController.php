@@ -45,12 +45,20 @@ class RegisterController extends Controller
 
     public function showRegistrationForm(request $request)
     {
-        $ref_code = $request->code;
+
+
+        if ($request->code != null) {
+
+            $email = User::where('referal_code', $request->code)->increment('click_count', 1);
+
+        }
+
         $pageTitle  = "Register";
+        $ref_code =$request->code;
         $info       = json_decode(json_encode(getIpInfo()), true);
         $mobileCode = @implode(',', $info['code']);
         $countries  = json_decode(file_get_contents(resource_path('views/partials/country.json')));
-        return view($this->activeTemplate . 'user.auth.register', compact('pageTitle', 'mobileCode', 'ref_code', 'countries'));
+        return view($this->activeTemplate . 'user.auth.register', compact('pageTitle', 'mobileCode','ref_code', 'countries'));
     }
 
     /**
@@ -101,33 +109,29 @@ class RegisterController extends Controller
     {
 
 
-        if($data['code'] != "null"){
-            $ref_amount = CouponCode::where('id', 1)->first()->ref_amount;
-            $email = User::where('referal_code', $data['code'])->first()->email;
-            $username= User::where('referal_code', $data['code'])->first()->username;
-
-
-
-            $get_email = Referre::where('email_2', $data['email'])->first()->email ?? null;
-
-            if($get_email == null){
-
-                $ref = new Referre();
-                $ref->email = $email;
-                $ref->email_2 = trim($data['email']);
-                $ref->referer = $username;
-                $ref->refrere = trim($data['username']);
-                $ref->amount = $ref_amount;
-                $ref->save();
-            }
-
-
-        }
 
 
 
 
         $general = gs();
+
+        if ($data['code'] != "null") {
+            $email = User::where('referal_code', $data['code'])->first()->email;
+            $username = User::where('referal_code', $data['code'])->first()->username;
+            $get_email = Referre::where('email_2', $data['email'])->first()->email ?? null;
+
+            $ref = new Referre();
+            $ref->email = $email;
+            $ref->email_2 = trim($data['email']);
+            $ref->referer = $username;
+            $ref->refrere = trim($data['username']);
+            $ref->save();
+
+
+            User::where('email', $email)->increment('sign_up_count', 1);
+
+
+        }
 
         //User Create
         $user = new User();

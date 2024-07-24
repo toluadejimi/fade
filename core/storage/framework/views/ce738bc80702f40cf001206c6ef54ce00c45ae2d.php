@@ -22,6 +22,47 @@
     <link rel="stylesheet" href="<?php echo e(url('')); ?>/assets/assets2/fonts/material.css"><!-- [Template CSS Files] -->
     <link rel="stylesheet" href="<?php echo e(url('')); ?>/assets/assets2/css/style.css" id="main-style-link">
     <link rel="stylesheet" href="<?php echo e(url('')); ?>/assets/assets2/css/style-preset.css">
+
+
+    <style>
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body { font-family: sans-serif; }
+
+        .gallery {
+            background: #EEE;
+        }
+
+        .gallery-cell {
+            width: 66%;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            counter-increment: gallery-cell;
+        }
+
+        /* cell number */
+        .gallery-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(gallery-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        }
+
+    </style>
+
+
+
+
+
+
+
 </head><!-- [Head] end --><!-- [Body] Start -->
 <body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-layout="vertical" data-pc-direction="ltr"
       data-pc-theme_contrast="" data-pc-theme="light"><!-- [ Pre-loader ] start -->
@@ -965,18 +1006,8 @@
 
 <footer class="pc-footer">
     <div class="footer-wrapper container-fluid">
-        <div class="row">
-            <div class="col my-1"><p class="m-0">Able Pro &#9829; crafted by Team <a
-                        href="https://themeforest.net/user/phoenixcoded" target="_blank">Phoenixcoded</a></p></div>
-            <div class="col-auto my-1">
-                <ul class="list-inline footer-link mb-0">
-                    <li class="list-inline-item"><a href="../index.html">Home</a></li>
-                    <li class="list-inline-item"><a href="https://phoenixcoded.gitbook.io/able-pro/" target="_blank">Documentation</a>
-                    </li>
-                    <li class="list-inline-item"><a href="https://phoenixcoded.authordesk.app/"
-                                                    target="_blank">Support</a></li>
-                </ul>
-            </div>
+        <div class="text-center">
+            <h6 class="text-muted">2024</h6>|<h6>FADDED LOGS STORE</h6>
         </div>
     </div>
 </footer><!-- Required Js -->

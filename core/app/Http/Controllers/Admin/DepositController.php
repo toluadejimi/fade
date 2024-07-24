@@ -16,7 +16,8 @@ class DepositController extends Controller
     {
         $pageTitle = 'Pending Payments';
         $deposits = $this->depositData('pending');
-        return view('admin.deposit.log', compact('pageTitle', 'deposits'));
+        $referaldeposits = Deposit::where('method_code', 6000)->where('status', 5)->with('user')->paginate(getPaginate());
+        return view('admin.deposit.log', compact('pageTitle', 'deposits', 'referaldeposits'));
     }
 
 
@@ -24,28 +25,32 @@ class DepositController extends Controller
     {
         $pageTitle = 'Approved Payments';
         $deposits = $this->depositData('approved');
-        return view('admin.deposit.log', compact('pageTitle', 'deposits'));
+        $referaldeposits = Deposit::where('method_code', 6000)->where('status', 5)->with('user')->paginate(getPaginate());
+        return view('admin.deposit.log', compact('pageTitle', 'deposits', 'referaldeposits'));
     }
 
     public function successful()
     {
         $pageTitle = 'Successful Payments';
         $deposits = $this->depositData('successful');
-        return view('admin.deposit.log', compact('pageTitle', 'deposits'));
+        $referaldeposits = Deposit::where('method_code', 6000)->where('status', 5)->with('user')->paginate(getPaginate());
+        return view('admin.deposit.log', compact('pageTitle', 'deposits', 'referaldeposits'));
     }
 
     public function rejected()
     {
         $pageTitle = 'Rejected Payments';
         $deposits = $this->depositData('rejected');
-        return view('admin.deposit.log', compact('pageTitle', 'deposits'));
+        $referaldeposits = Deposit::where('method_code', 6000)->where('status', 5)->with('user')->paginate(getPaginate());
+        return view('admin.deposit.log', compact('pageTitle', 'deposits', 'referaldeposits'));
     }
 
     public function initiated()
     {
         $pageTitle = 'Initiated Payments';
         $deposits = $this->depositData('initiated');
-        return view('admin.deposit.log', compact('pageTitle', 'deposits'));
+        $referaldeposits = Deposit::where('method_code', 6000)->where('status', 5)->with('user')->paginate(getPaginate());
+        return view('admin.deposit.log', compact('pageTitle', 'deposits', 'referaldeposits'));
     }
 
     public function deposit()
@@ -58,7 +63,8 @@ class DepositController extends Controller
         $pending = $summery['pending'];
         $rejected = $summery['rejected'];
         $initiated = $summery['initiated'];
-        return view('admin.deposit.log', compact('pageTitle', 'deposits','successful','pending','rejected','initiated'));
+        $referaldeposits = Deposit::where('method_code', 6000)->where('status', 5)->with('user')->paginate(getPaginate());
+        return view('admin.deposit.log', compact('pageTitle', 'deposits','successful','pending','rejected','initiated', 'referaldeposits'));
     }
 
     protected function depositData($scope = null,$summery = false)
@@ -112,8 +118,8 @@ class DepositController extends Controller
     }
 
 
-    public function approve($id) 
-    {  
+    public function approve($id)
+    {
         $deposit = Deposit::where('id',$id)->where('status',Status::PAYMENT_PENDING)->firstOrFail();
 
         PaymentController::userDataUpdate($deposit,true);
@@ -124,7 +130,7 @@ class DepositController extends Controller
     }
 
     public function reject(Request $request)
-    { 
+    {
         $request->validate([
             'id' => 'required|integer',
             'message' => 'required|string|max:255'
@@ -134,8 +140,8 @@ class DepositController extends Controller
         $deposit->admin_feedback = $request->message;
         $deposit->status = Status::PAYMENT_REJECT;
         $deposit->save();
-        
-       
+
+
         notify($deposit->user, 'DEPOSIT_REJECT', [
             'method_name' => $deposit->gatewayCurrency()->name,
             'method_currency' => $deposit->method_currency,

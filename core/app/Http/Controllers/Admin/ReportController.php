@@ -39,7 +39,7 @@ class ReportController extends Controller
         return view('admin.reports.email_details', compact('pageTitle','email'));
     }
 
-    public function orderHistory(Request $request){ 
+    public function orderHistory(Request $request){
         $pageTitle = 'Order History';
 
         $orders = Order::searchable(['user:username', 'deposit:trx'])
@@ -51,14 +51,14 @@ class ReportController extends Controller
 
         return view('admin.reports.order_history', compact('pageTitle', 'orders'));
     }
- 
-    public function orderDetails($id){ 
+
+    public function orderDetails($id){
         $order = Order::findOrFail($id);
-        $pageTitle = "Order Details - {$order->deposit->trx}";
+        $pageTitle = "Order Details";
 
         $items = @$order->orderItems->pluck('product_detail_id')->toArray() ?? [];
         $accounts = ProductDetail::whereIn('id', $items)->searchable(['details'])->orderBy('id', 'DESC')->paginate(getPaginate());
-        
+
         return view('admin.product.account',compact('pageTitle', 'accounts', 'order'));
     }
 

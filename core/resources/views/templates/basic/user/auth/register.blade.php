@@ -105,7 +105,8 @@
                         <form action="{{ route('user.register') }}" method="POST" class="verify-gcaptcha">
                             @csrf
 
-                            <input type="text" name="code" value="{{$ref_code ?? "null"}}" hidden>
+                            <input type="text" name="code" value="{{$ref_code ?? "null"}}" hidden >
+
 
                             <div class="mb-3">
                                 <input

@@ -31,6 +31,25 @@ class PaymentController extends Controller
         if($request->payment == "wallet"){
             $qty = $request->qty;
 
+
+            $last_order = Order::latest()->where('user_id', Auth::id())->first()->created_at ?? null;
+
+            if($last_order != null){
+
+                $createdAt = strtotime($last_order);
+                $currentTime = time();
+                $timeDifference = $currentTime - $createdAt;
+
+                if ($timeDifference < 20) {
+
+                    $notify = "Please wait for 5secs and try again";
+                    return redirect('user/orders')->with('error', $notify);
+
+
+                }
+
+            }
+
             $product = Product::active()->whereHas('category', function($category){
                 return $category->active();
             })->findOrFail($request->id);
@@ -44,13 +63,15 @@ class PaymentController extends Controller
             $amount = ($product->price * $qty);
 
 
+
+
+
             $balance = Auth::user()->balance ?? null;
             if($balance < $amount){
                 $notify = "Insufficient Funds, Fund your wallet";
                 return redirect('/products')->with('error',$notify);
 
             }
-
 
 
             $final_amo = $amount;
@@ -89,6 +110,28 @@ class PaymentController extends Controller
             $order->save();
 
             $unsoldProductDetails = $product->unsoldProductDetails;
+
+
+            $amount1 = 3 / 100;
+            $amount2 = $amount1 * $product->price;
+            $percent = round($amount2, 2);
+
+
+            $ck_ref = Referre::where('refrere', Auth::user()->username)->first() ?? null;
+            if($ck_ref != null){
+                $reff = Referre::where('refrere', Auth::user()->username)->first();
+                $user_id = User::where('email', $reff->email)->first()->id;
+                User::where('username', $reff->referer)->increment('ref_wallet', $percent);
+
+                $depo = new Deposit();
+                $depo->user_id = $user_id;
+                $depo->order_id = 0;
+                $depo->method_code = 6000;
+                $depo->amount = $percent;
+                $depo->status = 1;
+                $depo->save();
+
+            }
 
 
                 for($i = 0; $i < $qty; $i++){

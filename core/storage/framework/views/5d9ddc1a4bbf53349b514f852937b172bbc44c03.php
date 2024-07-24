@@ -66,6 +66,7 @@
                                 <thead>
                                 <tr>
                                     <th>Order ID</th>
+                                    <th>Products</th>
                                     <th>Qty</th>
                                     <th>Amount(NGN)</th>
                                     <th>Date</th>
@@ -83,13 +84,20 @@
                                                href="<?php echo e(route('user.order.details', $order->id)); ?>">
                                                 <i class="fa fa-shopping-bag"></i>
 
-                                                <?php echo e($order->id); ?>
-
+                                                <?php echo e($order->id); ?> | View Order
                                             </a>
                                         </td>
+
                                         <td>
-                                            <span><?php echo e(@$order->orderItems->count()); ?></span>
+                                            <span><?php echo e(@$order->name ?? "Product Name"); ?></span>
                                         </td>
+
+                                        <td>
+                                            <span><?php echo e(@$order->orderItems->count()); ?> Pcs</span>
+                                        </td>
+
+
+
                                         <td>
                                             <?php echo e(showAmount($order->total_amount)); ?>
 
@@ -156,7 +164,7 @@
             </nav>
         </div>
     </div>
-    
+
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make($activeTemplate.'layouts.main2', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/XAMPP/xamppfiles/htdocs/project/fadded/core/resources/views/templates/basic/user/orders.blade.php ENDPATH**/ ?>

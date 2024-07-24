@@ -53,22 +53,17 @@ class UserController extends Controller
             User::where('id', Auth::id())->update(['refer' => $url, 'referal_code'=> $code]);
             $data['refer'] = Auth::user()->refer;
 
-            $data['earned'] = Referre::where('email', Auth::user()->email)->where('status', 1)->sum('amount');
+            $data['earned'] = Deposit::where('method_code', 6000)->where('status', 1)->sum('amount');
             $data['withdrawal'] = Deposit::where('user_id', Auth::id())->where('status', 3)->sum('final_amo');
-
-
 
 
             return view($this->activeTemplate . 'user.referal', $data);
         }else{
 
 
-            $data['earned'] = Referre::where('email', Auth::user()->email)->where('status', 1)->sum('amount');
+            $data['earned'] = Deposit::where('method_code', 6000)->where('user_id', Auth::id())->sum('amount');
             $data['withdrawal'] = Deposit::where('user_id', Auth::id())->where('status', 4)->sum('final_amo');
-            $data['referal'] = Referre::where('email', Auth::user()->email)->paginate('10');
-            $data['banks'] = get_banks();
-
-
+            $data['referal'] = Deposit::latest()->where('method_code', 6000)->where('user_id', Auth::id())->paginate('10');
 
 
             $data['refer'] = Auth::user()->refer;
@@ -453,45 +448,26 @@ class UserController extends Controller
     }
 
 
-    public function send_money(request $request)
-    {
+    public function send_money(request $request){
 
-
-        if(Auth::user()->ref_wallet < $request->amount){
-            return back()->with('error', "Insufficient Referral Funds");
+        $ck_wallet = User::where('id', Auth::id())->first()->ref_wallet;
+        if($ck_wallet < $request->amount){
+            return back()->with('error', "insufficient Funds");
         }
 
         User::where('id', Auth::id())->decrement('ref_wallet', $request->amount);
 
-        $amount = $request->amount;
-        $bank_code = $request->bank_code;
-        $acct_no = $request->acct_no;
+        $depo = new Deposit();
+        $depo->user_id = Auth::id();
+        $depo->order_id = 0;
+        $depo->method_code = 6000;
+        $depo->amount = $request->amount;
+        $depo->bank_name = $request->bank_name;
+        $depo->account_no = $request->account_no;
+        $depo->status = 5;
+        $depo->save();
 
-        $send = send_money($amount, $bank_code, $acct_no);
-
-
-        if($send == 1){
-            $data = new Deposit();
-            $data->user_id = Auth::id();
-            $data->method_code = 1001;
-            $data->method_currency = "NGN";
-            $data->amount = $request->amount;
-            $data->charge = 0;
-            $data->rate = 0;
-            $data->final_amo = $request->amount;
-            $data->btc_amo = 0;
-            $data->status = 4;
-            $data->btc_wallet = "";
-            $data->trx = getTrx();
-            $data->save();
-
-            return back()->with('message', "Funds sent successfully");
-        }else{
-            User::where('id', Auth::id())->increment('ref_wallet', $request->amount);
-            return back()->with('error', "An error occurred");
-        }
-
-
+        return back()->with('message', 'Withdrawal has been successfully placed');
 
     }
 

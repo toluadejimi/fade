@@ -26,6 +26,20 @@
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/css/style.css" id="main-style-link">
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/css/style-preset.css">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> --}}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+
 
     <style>
         .carousel {
@@ -93,7 +107,7 @@
                             </div>
 
                             <div class="flex-grow-1 ms-3 me-2">
-                                <h6 class="mb-0">{{Auth::user()->username}}</h6>
+                                <a href="/user/dashboard"><h6 class="mb-0">{{Auth::user()->username}}</h6></a>
                                 <small>Customer</small>
                             </div>
 
@@ -126,6 +140,17 @@
                                 </svg>
                             </span>
                                 <span class="pc-mtext">My Orders</span>
+                            </a>
+
+                        </li>
+
+
+                        <li class="pc-item">
+                            <a href="/user/refer" class="pc-link">
+                            <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-note-1"></use>
+                                </svg>
+                            </span>
+                                <span class="pc-mtext">Referral</span>
                             </a>
 
                         </li>
@@ -180,22 +205,19 @@
                         </li>
 
 
+
                         <li class="pc-item">
                             <a href="/user/termofuse" class="pc-link">
-                            <span class="pc-micon">
-                                <svg width="24" height="24" viewBox="0 0 18 20" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.5"
-                                      d="M0 8C0 4.229 -1.19209e-07 2.343 1.172 1.172C2.343 -1.19209e-07 4.229 0 8 0H10C13.771 0 15.657 -1.19209e-07 16.828 1.172C18 2.343 18 4.229 18 8V12C18 15.771 18 17.657 16.828 18.828C15.657 20 13.771 20 10 20H8C4.229 20 2.343 20 1.172 18.828C-1.19209e-07 17.657 0 15.771 0 12V8Z"
-                                      fill="#878787"/>
+                            <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-document-filter"></use>
                                 </svg>
-
-
                             </span>
                                 <span class="pc-mtext"> Terms Of Use</span>
                             </a>
 
                         </li>
+
+
+
 
 
                         <li class="pc-item">

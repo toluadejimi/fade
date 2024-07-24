@@ -95,7 +95,7 @@
 
 
                     <div class="text-center">
-                        <a href="login-v2.html#"
+                        <a href="/"
                         ><img src="<?php echo e(url('')); ?>/assets/assets2/images/logo-dark.svg" alt="img"
                             /></a>
 
@@ -107,7 +107,8 @@
                         <form action="<?php echo e(route('user.register')); ?>" method="POST" class="verify-gcaptcha">
                             <?php echo csrf_field(); ?>
 
-                            <input type="text" name="code" value="<?php echo e($ref_code ?? "null"); ?>" hidden>
+                            <input type="text" name="code" value="<?php echo e($ref_code ?? "null"); ?>" hidden >
+
 
                             <div class="mb-3">
                                 <input
@@ -171,7 +172,7 @@
 
 
                         </form>
-                        
+
                             <div class="d-flex justify-content-between align-items-end mt-4">
                                 <h6 class="f-w-500 mb-0">Already have an Account?</h6>
                                 <a href="/user/login" class="link-primary">Login here</a>

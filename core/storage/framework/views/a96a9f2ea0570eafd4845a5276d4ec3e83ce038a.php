@@ -69,4 +69,4 @@
 <?php $__env->stopSection(); ?>
 
 
-<?php echo $__env->make($activeTemplate.'layouts.main', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/XAMPP/xamppfiles/htdocs/project/fadded/core/resources/views/templates/basic/user/payment/Enkpay.blade.php ENDPATH**/ ?>
+<?php echo $__env->make($activeTemplate.'layouts.main2', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/XAMPP/xamppfiles/htdocs/project/fadded/core/resources/views/templates/basic/user/payment/Enkpay.blade.php ENDPATH**/ ?>

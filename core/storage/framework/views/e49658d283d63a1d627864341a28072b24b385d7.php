@@ -2,7 +2,6 @@
     <button class="res-sidebar-close-btn"><i class="las la-times"></i></button>
     <div class="sidebar__inner">
         <div class="sidebar__logo">
-            <a href="<?php echo e(route('admin.dashboard')); ?>" class="sidebar__main-logo"><img src="<?php echo e(getImage(getFilePath('logoIcon') .'/logo.png')); ?>" alt="<?php echo app('translator')->get('image'); ?>"></a>
         </div>
 
         <div class="sidebar__menu-wrapper" id="sidebar__menuWrapper">
@@ -274,7 +273,7 @@
                 </li>
 
 
-                
+
 
 
                 <li class="sidebar__menu-header"><?php echo app('translator')->get('Settings'); ?></li>
@@ -470,10 +469,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="text-center mb-3 text-uppercase">
-                <span class="text--primary"><?php echo e(__(systemDetails()['name'])); ?></span>
-                <span class="text--success"><?php echo app('translator')->get('V'); ?><?php echo e(systemDetails()['version']); ?> </span>
-            </div>
+
         </div>
     </div>
 </div>
