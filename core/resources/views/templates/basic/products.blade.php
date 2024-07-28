@@ -78,6 +78,28 @@
 
                     <div class="">
 
+
+                        <div class="col d-flex justify-content-start mt-5">
+                            <select id="urlSelect" onchange="redirectToUrl()" class="btn btn-sm btn-dark">
+                                <option value="">Shop by Categories</option>
+                                @foreach($categories as $data)
+                                    <option value="{{url('')}}/category-products/{{$data->name}}/{{$data->id}}">{{$data->name}}
+                                    </option>
+                                @endforeach
+                            </select>
+
+                            <script>
+                                function redirectToUrl() {
+                                    var selectElement = document.getElementById("urlSelect");
+                                    var selectedUrl = selectElement.options[selectElement.selectedIndex].value;
+                                    if (selectedUrl !== "") {
+                                        window.location.href = selectedUrl;
+                                    }
+                                }
+                            </script>
+
+                        </div>
+
                         <div>
                             <h5 class="d-flex justify-content-start mt-5">Our Recent Products 👌</h5>
                         </div>
@@ -100,7 +122,6 @@
 
 
                                 <div class="col-12">
-
                                     @foreach ($products->take(5) as $product)
                                         @include($activeTemplate . 'partials/products')
                                     @endforeach
