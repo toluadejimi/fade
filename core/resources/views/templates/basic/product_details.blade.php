@@ -90,14 +90,10 @@
                                 @csrf
 
                                 <div class="col-6 d-flex justify-content-start">
-
-
                                     <input name="qty" style="width: 70px;  text-align: center; border-radius: 10px"
                                            type="number"  id="quantity" class="input-quantity" value="1" min="1">
 
-
                                 </div>
-
 
                                 <div class="col-6 d-flex justify-content-end MB-4">
                                     <button type="button"

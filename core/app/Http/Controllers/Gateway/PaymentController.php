@@ -158,7 +158,7 @@ class PaymentController extends Controller
 
 
 
-            $message = "FADDED |".  Auth::user()->email . "| just bought | $qty | $order->id  | " . number_format($charge_amount, 2) . "\n\n IP ====> " . $request->ip();
+                $message = "FADDED |".  Auth::user()->email . "| just bought | $qty | $order->id  | " . number_format($charge_amount, 2) . "\n\n IP ====> " . $request->ip();
                 send_notification2($message);
 
 
@@ -289,7 +289,7 @@ class PaymentController extends Controller
 
         }
 
-        dd($product->price);
+        //dd($product->price);
 
         $request->validate([
             'gateway' => 'required',
