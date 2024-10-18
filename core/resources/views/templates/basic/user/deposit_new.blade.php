@@ -32,7 +32,8 @@
 
                             <p class="mt-3 p-3">Top up your wallet easily</p>
 
-                            <a style="background: #20CCB4FF; border: 0px" href="https://www.youtube.com/shorts/Zn_dALbDhSI"
+                            <a style="background: #20CCB4FF; border: 0px"
+                               href="https://www.youtube.com/shorts/Zn_dALbDhSI"
                                class="btn btn-dark btn-sm w-20 p-2">Learn how to fund your wallet</a>
 
 
@@ -93,19 +94,19 @@
             </form>
 
 
-                <a href="https://web.enkpay.com/resolve?user_id=4455667894563443&check_url=https://faddedsms.com/api/verify" class="btn btn-dark w-100"> Having payment issues? Click here to Resolve</a>
+            <div class="d-flex justify-content-center">
+
+                <button type="submit"
+                        style="background: #01110f; border: 0px; color: #3dffe8"
+                        class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm">@lang('Continue')
 
 
+            </div>
 
 
-                <div class="d-flex justify-content-center">
+            <a href="https://web.enkpay.com/resolve?user_id=4455667894563443&check_url=https://faddedsms.com/api/verify"
+               class="btn btn-dark w-100 my-3"> Having payment issues? Click here to Resolve</a>
 
-                    <button type="submit"
-                            style="background: #01110f; border: 0px; color: #3dffe8"
-                            class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm">@lang('Continue')
-
-
-                </div>
 
         </div>
     </div>
