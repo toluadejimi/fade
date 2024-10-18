@@ -105,7 +105,7 @@
 
 
             <a href="https://web.enkpay.com/resolve?user_id=4455667894563443&check_url=https://faddedsms.com/api/verify"
-               class="btn btn-dark w-100 my-3"> Having payment issues? Click here to Resolve</a>
+               class="btn btn-warning w-100 my-3"> Having payment issues? Click here to Resolve</a>
 
 
         </div>
