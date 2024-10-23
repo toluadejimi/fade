@@ -94,15 +94,6 @@
             </form>
 
 
-            <div class="d-flex justify-content-center">
-
-                <button type="submit"
-                        style="background: #01110f; border: 0px; color: #3dffe8"
-                        class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm">@lang('Continue')
-
-
-            </div>
-
 
             <a href="https://web.enkpay.com/resolve?user_id=4455667894563443&check_url=https://faddedsms.com/api/verify"
                class="btn btn-warning w-100 my-3"> Having payment issues? Click here to Resolve</a>
