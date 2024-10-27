@@ -95,7 +95,7 @@
 
 
 
-            <a href="https://web.sprintpay.online/resolve?user_id=4455667894563443&check_url=https://fadded-socials.com/api/verify"
+            <a href="https://web.sprintpay.online/resolve?user_id=4455667894563443&check_url=https://api.fadded-socials.com/public/api/verify"
                class="btn btn-warning w-100 my-3"> Having payment issues? Click here to Resolve</a>
 
 
