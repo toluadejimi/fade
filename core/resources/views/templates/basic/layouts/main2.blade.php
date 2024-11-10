@@ -409,6 +409,17 @@
 @yield('content')
 
 
+
+
+<footer class="pc-footer">
+    <div class="footer-wrapper container-fluid">
+        <div class="text-center">
+            <h6 class="">2024 | FADDED LOGS STORE</h6>
+        </div>
+    </div>
+</footer><!-- Required Js -->
+
+
 <div class="floating-chat">
     <i class="fa fa-comments" aria-hidden="true"></i>
     <div class="chat">
@@ -426,14 +437,6 @@
 </div>
 
 
-
-<footer class="pc-footer">
-    <div class="footer-wrapper container-fluid">
-        <div class="text-center">
-            <h6 class="">2024 | FADDED LOGS STORE</h6>
-        </div>
-    </div>
-</footer><!-- Required Js -->
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script src="{{url('')}}/assets/assets2/js/plugins/popper.min.js"></script>
 <script src="{{url('')}}/assets/assets2/js/plugins/simplebar.min.js"></script>
