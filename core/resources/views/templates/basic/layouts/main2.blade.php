@@ -157,7 +157,7 @@
 
 
                         <li class="pc-item">
-                            <a href="https://t.me/faddedsocialsteam" class="pc-link">
+                            <a href="https://linktr.ee/faddedsocials" class="pc-link">
                             <span class="pc-micon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">

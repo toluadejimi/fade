@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/fonts/tabler-icons.min.css"><!-- [Feather Icons] https://feathericons.com -->
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/fonts/feather.css">
     <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="{{url('')}}/assets/style2.css">
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/fonts/fontawesome.css">
     <!-- [Material Icons] https://fonts.google.com/icons -->
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/fonts/material.css"><!-- [Template CSS Files] -->
@@ -597,7 +598,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="pc-item"><a href="../pages/contact-us.html" class="pc-link" target="_blank"><span
+                <li class="pc-item"><a href="https://linktr.ee/faddedsocials" class="pc-link" target="_blank"><span
                             class="pc-micon"><svg class="pc-icon"><use
                                     xlink:href="#custom-24-support"></use></svg> </span><span class="pc-mtext">Contact us</span></a>
                 </li>
@@ -723,7 +724,7 @@
                                                                                        class="dropdown-item"><i
                                 class="ti ti-settings"></i> <span>Settings</span> </a><a href="#"
                                                                                          class="dropdown-item"><i
-                                class="ti ti-headset"></i> <span>Support</span> </a><a href="#"
+                                class="ti ti-headset"></i> <span>Support</span> </a><a href="https://linktr.ee/faddedsocials"
                                                                                        class="dropdown-item"><i
                                 class="ti ti-lock"></i> <span>Lock Screen</span> </a><a href="#"
                                                                                         class="dropdown-item"><i
@@ -1001,6 +1002,24 @@
 </div><!-- [ Header ] end --><!-- [ Main Content ] start -->
 
 @yield('content')
+
+
+
+<div class="floating-chat">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+    <div class="chat">
+        <div class="header">
+            <span class="title">
+                You need support?
+            </span>
+
+        </div>
+        <ul class="messages">
+            <li style="color: white" class="other"><a style="color: white"  href="https://t.me/faddedsocialsgroup" target="_blank"><i class="bi bi-telegram"> </i> Get Support </a></li>
+            <li style="color: white" class="other"><a style="color: white"  href="https://t.me/faddedsocialsgroup" target="_blank"><i class="bi bi-telegram"> </i> Join our channel</a></li>
+        </ul>
+    </div>
+</div>
 
 
 
