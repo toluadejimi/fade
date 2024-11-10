@@ -193,7 +193,7 @@
                                                                 @foreach($bought as $data)
 
                                                                     <tr>
-                                                                        <td>{{\Illuminate\Support\Str::limit($data->user_name,4, '.')}}, <span style="color: #f10054">just purchase</span><br/> {{\Illuminate\Support\Str::limit($data->item,
+                                                                        <td>{{\Illuminate\Support\Str::limit($data->user_name,4, '.')}}, <span style="color: #038f8b">just bought</span><br/> {{\Illuminate\Support\Str::limit($data->item,
                                     16, '...')}}<span style="color: #000000">₦{{number_format($data->amount)}}</span></td>
                                                                         <td>{{ diffForHumans($data->created_at) }}</td>
                                                                     </tr>
