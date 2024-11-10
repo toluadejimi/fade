@@ -407,6 +407,24 @@
 @yield('content')
 
 
+<div class="floating-chat">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+    <div class="chat">
+        <div class="header">
+            <span class="title">
+                You need support?
+            </span>
+
+        </div>
+        <ul class="messages">
+            <li style="color: white" class="other"><a style="color: white"  href="https://t.me/faddedsocialsgroup" target="_blank"><i class="bi bi-telegram"> </i> Get Support </a></li>
+            <li style="color: white" class="other"><a style="color: white"  href="https://t.me/faddedsocialsgroup" target="_blank"><i class="bi bi-telegram"> </i> Join our channel</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
 <footer class="pc-footer">
     <div class="footer-wrapper container-fluid">
         <div class="text-center">
