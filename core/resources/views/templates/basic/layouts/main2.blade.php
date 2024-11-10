@@ -355,7 +355,7 @@
     .float {
         position: fixed; /* Position it fixed to ensure it's always in view */
         bottom: 20px; /* Adjust the distance from the bottom */
-        left: 180px; /* Adjust the distance from the right */
+        left: 200px; /* Adjust the distance from the right */
         background-color: rgba(255, 0, 0, 0);
         border: none; /* Remove default border */
         padding: 0; /* Remove padding */
