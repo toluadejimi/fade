@@ -15,6 +15,8 @@
     <!-- [Page specific CSS] end -->
     <!-- [Font] Family -->
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/fonts/inter/inter.css" id="main-font-link">
+    <link rel="stylesheet" href="{{url('')}}/assets/style2.css">
+
     <!-- [Tabler Icons] https://tablericons.com -->
     <link rel="stylesheet" href="{{url('')}}/assets/assets2/fonts/tabler-icons.min.css">
     <!-- [Feather Icons] https://feathericons.com -->
