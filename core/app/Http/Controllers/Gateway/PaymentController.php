@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Gateway;
 
+use App\Models\Bought;
 use App\Models\Referre;
 use App\Models\User;
 use App\Models\Order;
@@ -157,8 +158,17 @@ class PaymentController extends Controller
                 }
 
 
+                $br = new Bought();
+                $br->user_name = Auth::user()->username;
+                $br->qty = $qty;
+                $br->item = $product->name;
+                $br->amount = $amount;
+                $br->save();
 
-                $message = "FADDED |".  Auth::user()->email . "| just bought | $qty | $order->id  | " . number_format($charge_amount, 2) . "\n\n IP ====> " . $request->ip();
+
+
+
+            $message = "FADDED |".  Auth::user()->email . "| just bought | $qty | $order->id  | " . number_format($charge_amount, 2) . "\n\n IP ====> " . $request->ip();
                 send_notification2($message);
 
 

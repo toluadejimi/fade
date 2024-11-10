@@ -31,14 +31,23 @@
                     <div>
 
 
-
                         <div class="carousel my-3 mb-4">
                             <div class="carousel-images">
-                                <a href="/products"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner1.jpg" alt="Banner 1"></a>
-                                <a href="https://t.me/faddedsocialsgroup"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner2.jpg" alt="Banner 2"></a>
-                                <a href="https://linktr.ee/faddedsocials"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner3.jpg" alt="Banner 3"></a>
-                                <a href="https://chat.whatsapp.com/CuSck16moiWFH8njS7pE7C"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner4.jpg" alt="Banner 4"></a>
-                                <a href="/products"><img src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner5.jpg" alt="Banner 5"></a>
+                                <a href="/products"><img
+                                        src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner1.jpg"
+                                        alt="Banner 1"></a>
+                                <a href="https://t.me/faddedsocialsgroup"><img
+                                        src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner2.jpg"
+                                        alt="Banner 2"></a>
+                                <a href="https://linktr.ee/faddedsocials"><img
+                                        src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner3.jpg"
+                                        alt="Banner 3"></a>
+                                <a href="https://chat.whatsapp.com/CuSck16moiWFH8njS7pE7C"><img
+                                        src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner4.jpg"
+                                        alt="Banner 4"></a>
+                                <a href="/products"><img
+                                        src="https://fadded.tomitechltd.com/assets/assets/images/slider/Banner5.jpg"
+                                        alt="Banner 5"></a>
                             </div>
                             <div class="carousel-buttons">
                                 <button id="prevBtn">&#10094;</button>
@@ -83,7 +92,8 @@
                             <select id="urlSelect" onchange="redirectToUrl()" class="btn btn-sm btn-dark">
                                 <option value="">Shop by Categories</option>
                                 @foreach($categories as $data)
-                                    <option value="{{url('')}}/category-products/{{$data->name}}/{{$data->id}}">{{$data->name}}
+                                    <option
+                                        value="{{url('')}}/category-products/{{$data->name}}/{{$data->id}}">{{$data->name}}
                                     </option>
                                 @endforeach
                             </select>
@@ -153,6 +163,63 @@
                                 </div>
                             @endforelse
                             {{ paginateLinks($categories) }}
+
+
+                                <div class="col-12 my-4">
+                                    @auth
+
+                                        <div class="card-title mt-3 text-center">
+                                            <h6 style="background: #565656; padding: 10px; border-radius: 10px; color: white"
+                                                class="text-left">RECENT ORDER</h6>
+                                        </div>
+
+
+                                        <div style="height:400px; width:100%; overflow-y: scroll;" class="card">
+                                            <div class="card-body">
+
+
+                                                <div class="dashboard-body__item">
+                                                    <div class="table-responsive">
+                                                        <table class="table style-two">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Item</th>
+                                                                <th>Time</th>
+
+                                                            </tr>
+
+                                                            @if($bought_qty == 0)
+                                                            @else
+                                                                @foreach($bought as $data)
+
+                                                                    <tr>
+                                                                        <td>{{\Illuminate\Support\Str::limit($data->user_name,4, '.')}}, <span style="color: #f10054">just purchase</span><br/> {{\Illuminate\Support\Str::limit($data->item,
+                                    16, '...')}}<span style="color: #000000">₦{{number_format($data->amount)}}</span></td>
+                                                                        <td>{{ diffForHumans($data->created_at) }}</td>
+                                                                    </tr>
+
+                                                                @endforeach
+                                                            @endif
+
+
+
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    @else
+
+                                    @endauth
+
+                                </div>
+
                         </div>
 
 @endsection
