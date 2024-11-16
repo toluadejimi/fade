@@ -110,7 +110,8 @@
 
                             <div class="flex-grow-1 ms-3 me-2">
                                 <a href="/user/dashboard"><h6 class="mb-0">{{Auth::user()->username}}</h6></a>
-                                <small>Customer</small>
+                                <a href="/user/dashboard"><h6 class="mb-0">{{Auth::user()->email}}</h6></a>
+
                             </div>
 
                         </div>

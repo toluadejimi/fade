@@ -33,10 +33,8 @@
                             <p class="mt-3 p-3">Top up your wallet easily</p>
 
                             <a style="background: #20CCB4FF; border: 0px"
-                               href="https://www.youtube.com/shorts/Zn_dALbDhSI"
+                               href="https://streamable.com/cumu01"
                                class="btn btn-dark btn-sm w-20 p-2">Learn how to fund your wallet</a>
-
-
                         </div>
 
 
@@ -62,16 +60,7 @@
                                             @endforeach
                                         </select>
 
-                                        {{--                                @foreach($gateway_currency as $data)--}}
-                                        {{--                                    <div class="clearfix">--}}
-                                        {{--                                        <input type="radio" value="{{$data->method_code}}" name="gateway" required--}}
-                                        {{--                                               data-gateway="{{ $data }}" class="btn-check" id="{{$data->btn_id}}"--}}
-                                        {{--                                               checked="btnradio1">--}}
-                                        {{--                                        <label class="btn text-small tag-btn" for="{{$data->btn_id}}">--}}
-                                        {{--                                            {{$data->name}}--}}
-                                        {{--                                        </label>--}}
-                                        {{--                                    </div>--}}
-                                        {{--                                @endforeach--}}
+
 
                                     </div>
                                 </div>

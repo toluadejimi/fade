@@ -36,7 +36,7 @@
                                 @lang('You are about to be redirected to make payment of')
                             </p>
 
-                            <a style="background: #20CCB4FF; border: 0px" href="https://www.youtube.com/shorts/Zn_dALbDhSI"
+                            <a style="background: #20CCB4FF; border: 0px" href="https://streamable.com/cumu01"
                                class="btn btn-dark btn-sm w-20 p-2">Learn how to fund your wallet</a>
 
 
