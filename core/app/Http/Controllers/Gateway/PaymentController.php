@@ -189,8 +189,8 @@ class PaymentController extends Controller
         }
 
 
-        if($request->amount > 100000) {
-            $notify = "Amount can not be more than 100,000";
+        if($request->amount > 500000) {
+            $notify = "Amount can not be more than 500,000";
             return back()->with('error',$notify);
         }
 
