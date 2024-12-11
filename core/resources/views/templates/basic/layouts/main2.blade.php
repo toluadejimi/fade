@@ -221,6 +221,18 @@
 
 
 
+                        <li class="pc-item">
+                            <a href="https://faddedsms.com/us" class="pc-link">
+                            <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-sms"></use>
+                                </svg>
+                            </span>
+                                <span class="pc-mtext"> Verify SMS</span>
+                            </a>
+
+                        </li>
+
+
+
 
 
                         <li class="pc-item">
@@ -248,6 +260,18 @@
 
 
                         <hr class="text-muted">
+
+
+
+                        <li class="pc-item">
+                            <a href="/user/profile" class="pc-link">
+                            <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-user-bold"></use>
+                                </svg>
+                            </span>
+                                <span class="pc-mtext"> My Profile</span>
+                            </a>
+
+                        </li>
 
 
                         <li class="pc-item">

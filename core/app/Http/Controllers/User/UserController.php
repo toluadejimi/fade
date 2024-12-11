@@ -473,7 +473,6 @@ class UserController extends Controller
 
     public function cash_out_wallet(request $request)
     {
-
         if(Auth::user()->ref_wallet < $request->amount){
             return back()->with('error', "Insufficient Referral Funds");
         }
