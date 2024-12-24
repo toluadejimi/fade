@@ -448,7 +448,7 @@ class UserController extends Controller
     }
 
 
-    public function send_money(request $request){
+    public function send_money_now(request $request){
 
         $ck_wallet = User::where('id', Auth::id())->first()->ref_wallet;
         if($ck_wallet < $request->amount){
@@ -456,6 +456,8 @@ class UserController extends Controller
         }
 
         User::where('id', Auth::id())->decrement('ref_wallet', $request->amount);
+        User::where('id', Auth::id())->increment('balance', $request->amount);
+
 
         $depo = new Deposit();
         $depo->user_id = Auth::id();
@@ -467,11 +469,11 @@ class UserController extends Controller
         $depo->status = 5;
         $depo->save();
 
-        return back()->with('message', 'Withdrawal has been successfully placed');
+        return back()->with('message', 'Withdrawal has been successfully added to your wallet');
 
     }
 
-    public function cash_out_wallet(request $request)
+    public function send_money(request $request)
     {
         if(Auth::user()->ref_wallet < $request->amount){
             return back()->with('error', "Insufficient Referral Funds");

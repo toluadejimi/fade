@@ -176,19 +176,6 @@
                                                class="form-control"
                                                style="background: rgb(220,220,220);border-radius: 10px;">
 
-                                        <h6 class="d-flex justify-content-center mt-2">Enter Account number</h6>
-                                        <input type="number" maxlength="" required name="account_no"
-                                               class="form-control"
-                                               style="background: rgb(220,220,220);border-radius: 10px;">
-
-
-                                        <h6 class="d-flex justify-content-center mt-2">Enter Bank Name</h6>
-                                        <input type="text" maxlength="" required name="bank_name"
-                                               class="form-control mb-3"
-                                               style="background: rgb(220,220,220);border-radius: 10px;">
-
-
-
                                         <button
                                             style="background: linear-gradient(279deg, #01227a -6.58%, #3886fd 121.69%);"
                                             class="btn text-white w-100 my-3 mt-2" type="submit">
