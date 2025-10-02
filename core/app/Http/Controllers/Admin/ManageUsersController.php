@@ -63,7 +63,7 @@ class ManageUsersController extends Controller
 
         $usr= User::where('id', $id)->first();
         $amount = number_format($request->amount);
-        $message = "FADDED | Admin has funded | $usr->email | NGN $amount |";
+        $message = "EMON BEST LOG Admin has funded | $usr->email | NGN $amount |";
 
         send_notification2($message);
 
@@ -82,7 +82,7 @@ class ManageUsersController extends Controller
 
         $usr= User::where('id', $id)->first();
         $amount = number_format($request->amount);
-        $message = "FADDED | Admin has removed | $usr->email | NGN $amount |";
+        $message = "EMON BEST LOG Admin has removed | $usr->email | NGN $amount |";
 
         send_notification2($message);
 

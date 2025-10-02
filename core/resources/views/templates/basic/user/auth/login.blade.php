@@ -2,7 +2,7 @@
 <html lang="en">
 <!-- [Head] start -->
 <head>
-    <title>Fadded | Logstore</title>
+    <title>EMON BEST LOG Logstore</title>
     <!-- [Meta] -->
     <meta charset="utf-8"/>
     <meta
@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta
         name="description"
-        content="Fadded | Logstore"
+        content="EMON BEST LOG Logstore"
     />
     <meta
         name="keywords"

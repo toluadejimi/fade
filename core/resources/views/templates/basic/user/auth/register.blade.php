@@ -2,7 +2,7 @@
 <html lang="en">
 <!-- [Head] start -->
 <head>
-    <title>FADDED | REGISTER</title>
+    <title>EMON BEST LOG REGISTER</title>
     <!-- [Meta] -->
     <meta charset="utf-8"/>
     <meta
