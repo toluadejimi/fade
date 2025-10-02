@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cfd0884-5059-4ef3-b2fd-ec5a1ead117c" name="Changes" comment="remove fund added">
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/views/53d829c6b485a14782e6c7c9fc5954adbab7827f.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/views/9fee6555b86ae45ac27b5b8bc9d8db28d4e6effa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/storage/framework/sessions/64wJtrYwL3KLqmrWTRqcrslPmUnkUjgIt2Y0MT0O" beforeDir="false" afterPath="$PROJECT_DIR$/core/storage/framework/sessions/64wJtrYwL3KLqmrWTRqcrslPmUnkUjgIt2Y0MT0O" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/storage/framework/views/88b33028e52acd5b0d0ecda593bd4b0900c0cf20.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/storage/framework/views/88b33028e52acd5b0d0ecda593bd4b0900c0cf20.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/storage/framework/views/d5c42a8d21c0e71491c6963559ee86c6dbbeaed8.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/storage/framework/views/d5c42a8d21c0e71491c6963559ee86c6dbbeaed8.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,15 +289,7 @@
       <workItem from="1719259185672" duration="2297000" />
       <workItem from="1719308539033" duration="3391000" />
       <workItem from="1719435257074" duration="1596000" />
-      <workItem from="1759415003694" duration="4498000" />
-    </task>
-    <task id="LOCAL-00021" summary="rules added">
-      <option name="closed" value="true" />
-      <created>1713218011970</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1713218011970</updated>
+      <workItem from="1759415003694" duration="5443000" />
     </task>
     <task id="LOCAL-00022" summary="rules added">
       <option name="closed" value="true" />
@@ -678,7 +675,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759420796941</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="remove fund added">
+      <option name="closed" value="true" />
+      <created>1759421526777</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1759421526777</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

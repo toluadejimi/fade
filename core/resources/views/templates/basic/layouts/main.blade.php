@@ -1026,7 +1026,7 @@
 <footer class="pc-footer">
     <div class="footer-wrapper container-fluid">
         <div class="text-center">
-            <h6 class="text-muted">2024</h6>|<h6>FADDED LOGS STORE</h6>
+            <h6 class="text-muted">2024</h6>|<h6>EMON BEST LOG</h6>
         </div>
     </div>
 </footer><!-- Required Js -->
