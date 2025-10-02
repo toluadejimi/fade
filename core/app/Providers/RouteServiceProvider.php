@@ -28,10 +28,14 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->configureRateLimiting();
 
         $this->routes(function () {
             Route::namespace($this->namespace)->middleware(VugiChugi::mdNm())->group(function(){
+
+                Route::middleware(['api'])
+                    ->prefix('api')
+                    ->group(base_path('routes/api.php'));
+
                 Route::middleware(['web','maintenance'])
                     ->namespace('Gateway')
                     ->prefix('ipn')
@@ -50,9 +54,7 @@ class RouteServiceProvider extends ServiceProvider
 
                 Route::middleware(['web','maintenance'])
                     ->group(base_path('routes/web.php'));
-
             });
-
         });
 
         Route::get('maintenance-mode','App\Http\Controllers\SiteController@maintenance')->name('maintenance');
