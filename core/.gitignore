@@ -2,3 +2,4 @@
 .env.backup
 /assets
 /core/public
+/core/storage
