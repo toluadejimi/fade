@@ -90,7 +90,7 @@
                                 <div class="catalog-item-wrapper mb-2">
                                     <div class="d-grid gap-2 mb-2">
                                         <strong>
-                                            <p style="font-size: 11px; background: linear-gradient(90deg, #20ccb4 0%, #3f8a7f 100%); border-radius:10px; color: white"
+                                            <p style="font-size: 11px; background: linear-gradient(90deg, #F95D3B 0%, #8C1C03 100%); border-radius:10px; color: white"
                                                class="p-2"><?php echo e(__($category->name)); ?></p>
                                         </strong>
                                     </div>

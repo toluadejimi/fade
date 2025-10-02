@@ -155,7 +155,7 @@
                             </div>
 
                             <div class="d-grid mt-4">
-                                <button style="background: #20CCB4FF; border: 0px" type="submit" class="btn btn-primary">Login</button>
+                                <button style="background: #F95D3BFF; border: 0px" type="submit" class="btn btn-primary">Login</button>
                             </div>
 
 
@@ -164,7 +164,7 @@
 
                         <div class="d-flex justify-content-between align-items-end mt-4">
                             <h6 class="f-w-500 mb-0">Don't have an Account?</h6>
-                            <a style="color: #20CCB4FF;" href="/user/register" class="link-primary"
+                            <a style="color: #F95D3BFF;" href="/user/register" class="link-primary"
                             >Create Account</a
                             >
                         </div>

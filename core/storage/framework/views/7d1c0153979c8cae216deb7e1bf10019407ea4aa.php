@@ -33,7 +33,7 @@
 
                             <p class="mt-3 p-3">Top up your wallet easily</p>
 
-                            <a style="background: #20CCB4FF; border: 0px" href="https://www.youtube.com/shorts/Zn_dALbDhSI"
+                            <a style="background: #F95D3BFF; border: 0px" href="https://www.youtube.com/shorts/Zn_dALbDhSI"
                                class="btn btn-dark btn-sm w-20 p-2">Learn how to fund your wallet</a>
 
 
@@ -62,16 +62,16 @@
                                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                         </select>
 
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
+
+
+
+
+
+
+
+
+
+
 
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                         <div class="p-3">
 
                             <button type="submit"
-                                    style="background: #20CCB4FF; border: 0px; color: white"
+                                    style="background: #F95D3BFF; border: 0px; color: white"
                                     class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm"><?php echo app('translator')->get('Continue'); ?>
 
 

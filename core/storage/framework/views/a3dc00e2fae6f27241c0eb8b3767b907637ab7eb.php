@@ -41,7 +41,7 @@
                     margin: 2.5px;
                     font-size: 20px;
                     color: #222;
-                    background-color: #20ccb4;
+                    background-color: #F95D3B;
                     border-radius: 10px;
                     color: white;
                 }
@@ -102,7 +102,7 @@
 
                                 <div class="col-6 d-flex justify-content-end MB-4">
                                     <button type="button"
-                                            style="background: #20CCB4FF; color:#ffffff;"
+                                            style="background: #F95D3BFF; color:#ffffff;"
                                             class="btn btn-main btn-sm w-70 pill">NGN<span id="total">10.00</span>
                                     </button>
 
@@ -137,9 +137,9 @@
 
 
 
-                                
-                                
-                                
+
+
+
 
                                 <input type="text" hidden name="id" value="<?php echo e($product->id); ?>">
                                 <input type="text" hidden type="text" name="payment" value="wallet">
@@ -207,7 +207,7 @@
 
                                     <?php if($product->in_stock > 0): ?>
                                         <button type="submit"
-                                                style="background: #20CCB4FF; color:#ffffff;"
+                                                style="background: #F95D3BFF; color:#ffffff;"
                                                 class="btn btn-main btn-lg w-100 pill">
                                             <svg class="cart me-1" width="16" height="16" viewBox="0 0 24 24"
                                                  fill="none"
@@ -227,7 +227,7 @@
 
                                     <?php else: ?>
                                         <button type="submit"
-                                                style="background: #20CCB4FF; color:#ffffff;"
+                                                style="background: #F95D3BFF; color:#ffffff;"
                                                 disabled
                                                 class="btn btn-main btn-lg w-100 pill">
                                             <svg class="cart me-1" width="16" height="16" viewBox="0 0 24 24"
@@ -262,47 +262,47 @@
         Scripts
         ***********************************-->
 
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
 
-    
 
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
-    
 
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <?php $__env->stopSection(); ?>
 

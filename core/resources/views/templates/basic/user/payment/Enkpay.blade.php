@@ -36,7 +36,7 @@
                                 @lang('You are about to be redirected to make payment of')
                             </p>
 
-                            <a style="background: #20CCB4FF; border: 0px" href="https://streamable.com/cumu01"
+                            <a style="background: #F95D3B; border: 0px" href="https://streamable.com/cumu01"
                                class="btn btn-dark btn-sm w-20 p-2">Learn how to fund your wallet</a>
 
 
@@ -49,7 +49,7 @@
 
 
                         <a href="{{ $data->url }}"
-                           style="background: #20CCB4FF; border: 0px; color:#ffffff;"
+                           style="background: #F95D3B; border: 0px; color:#ffffff;"
                            class="btn btn-main btn-lg w-100 pill p-3"
                         <svg class="cart me-2" width="16" height="16" viewBox="0 0 18 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">

@@ -163,7 +163,7 @@
 
 
                             <div class="d-grid mt-4">
-                                <button style="background: #20CCB4FF; border: 0px" type="submit" class="btn btn-primary">Register</button>
+                                <button style="background: #F95D3B; border: 0px" type="submit" class="btn btn-primary">Register</button>
                             </div>
 
 

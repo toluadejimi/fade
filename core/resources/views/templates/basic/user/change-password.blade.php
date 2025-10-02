@@ -53,7 +53,7 @@
                         <div class="p-3">
 
                             <button type="submit"
-                                    style="background: #20CCB4FF; border: 0px; color: white"
+                                    style="background: #F95D3B; border: 0px; color: white"
                                     class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm">@lang('Reset Password')
 
                         </div>

@@ -32,7 +32,7 @@
 
 
 
-    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -277,7 +277,7 @@
 
                             <div class="card">
                                 <div class="card-body">
-                                    <a style="background: #20CCB4FF; border: 0px" href="/user/login"
+                                    <a style="background: #F95D3B; border: 0px" href="/user/login"
                                        class="btn btn-dark btn-lg w-100 my-">Login</a>
 
                                     <a href="/user/register" class="btn btn-dark btn-lg w-100 my-3">Register</a>

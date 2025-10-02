@@ -32,7 +32,7 @@
 
                             <p class="mt-3 p-3">Top up your wallet easily</p>
 
-                            <a style="background: #20CCB4FF; border: 0px"
+                            <a style="background: #F95D3B; border: 0px"
                                href="https://streamable.com/cumu01"
                                class="btn btn-dark btn-sm w-20 p-2">Learn how to fund your wallet</a>
                         </div>
@@ -73,7 +73,7 @@
                         <div class="p-3">
 
                             <button type="submit"
-                                    style="background: #20CCB4FF; border: 0px; color: white"
+                                    style="background: #F95D3B; border: 0px; color: white"
                                     class="btn btn-main btn-lg w-100 pill p-3" id="btn-confirm">@lang('Continue')
 
 
