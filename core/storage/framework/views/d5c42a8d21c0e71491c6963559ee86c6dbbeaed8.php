@@ -34,7 +34,7 @@
 
 
 
-    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -222,7 +222,7 @@
 
 
                         <li class="pc-item">
-                            <a href="https://faddedsms.com/us" class="pc-link">
+                            <a href="https://emonverify.comus" class="pc-link">
                             <span class="pc-micon"><svg class="pc-icon"><use xlink:href="#custom-sms"></use>
                                 </svg>
                             </span>
