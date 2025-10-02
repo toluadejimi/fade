@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cfd0884-5059-4ef3-b2fd-ec5a1ead117c" name="Changes" comment="remove fund added">
-      <change afterPath="$PROJECT_DIR$/core/storage/framework/sessions/0NgRSWFRKFBowOvOEEtwS2g1dmreusKAgBYT6oza" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/storage/framework/sessions/vawiICvp25ljDsUj50w1TiMKJEarzeeUsElEgkcO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/storage/framework/views/f9cd1780752505e3845ada63aac9cd64ca013f46.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/storage/framework/views/f9cd1780752505e3845ada63aac9cd64ca013f46.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,23 +284,7 @@
       <workItem from="1719259185672" duration="2297000" />
       <workItem from="1719308539033" duration="3391000" />
       <workItem from="1719435257074" duration="1596000" />
-      <workItem from="1759415003694" duration="3792000" />
-    </task>
-    <task id="LOCAL-00019" summary="rules added">
-      <option name="closed" value="true" />
-      <created>1713217276948</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1713217276948</updated>
-    </task>
-    <task id="LOCAL-00020" summary="rules added">
-      <option name="closed" value="true" />
-      <created>1713217384434</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1713217384434</updated>
+      <workItem from="1759415003694" duration="4498000" />
     </task>
     <task id="LOCAL-00021" summary="rules added">
       <option name="closed" value="true" />
@@ -681,7 +662,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759419850204</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="remove fund added">
+      <option name="closed" value="true" />
+      <created>1759420509406</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1759420509406</updated>
+    </task>
+    <task id="LOCAL-00069" summary="remove fund added">
+      <option name="closed" value="true" />
+      <created>1759420796941</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1759420796941</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
