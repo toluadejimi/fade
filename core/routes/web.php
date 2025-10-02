@@ -3,12 +3,16 @@
 use App\Http\Controllers\ProxyController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
+use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 
 Route::get('/clear', function(){
     \Illuminate\Support\Facades\Artisan::call('optimize:clear');
 });
 
 Route::get('/proxy', [ProxyController::class, 'proxy']);
+
+Route::get('logs', [LogViewerController::class, 'index']);
+
 
 
 Route::get('verify', 'Gateway\Enkpay\ProcessController@ipn')->name('enkpay');
