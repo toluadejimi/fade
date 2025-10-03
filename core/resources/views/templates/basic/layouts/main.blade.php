@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-          content="Fadded Log strore">
+          content="Emon Log Store">
     <meta name="keywords"
           content="Fadded logstore">
     <meta name="author" content="Phoenixcoded"><!-- [Favicon] icon -->

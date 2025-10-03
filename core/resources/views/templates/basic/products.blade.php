@@ -36,13 +36,13 @@
                                 <a href="/products"><img
                                         src="{{url('')}}/assets/assets/images/slider/slide_1.png"
                                         alt="Banner 1"></a>
-                                <a href="#"><img
+                                <a href="https://t.me/emonbestqualitylog"><img
                                         src="{{url('')}}/assets/assets/images/slider/slide_2.png"
                                         alt="Banner 2"></a>
-                                <a href="https://linktr.ee/faddedsocials"><img
+                                <a href="https://t.me/emonbestqualitylog"><img
                                         src="{{url('')}}/assets/assets/images/slider/slide_3.png"
                                         alt="Banner 3"></a>
-                                <a href="https://chat.whatsapp.com/CuSck16moiWFH8njS7pE7C"><img
+                                <a href="https://chat.whatsapp.com/ErwCh6TfJ5WCZ1EZLzwOtC?mode=ems_wa_t"><img
                                         src="{{url('')}}/assets/assets/images/slider/slide_4.png"
                                         alt="Banner 4"></a>
 
