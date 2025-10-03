@@ -14,7 +14,7 @@
                                 <div class="card">
                                     <div class="card-body">
 
-                                        <h5> RULES AT FADDED SOCIAL</h5>
+                                        <h5> RULES AT Emon Log Store</h5>
 
                                         <ul>
 

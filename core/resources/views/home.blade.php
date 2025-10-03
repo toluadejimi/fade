@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Fadded Social | Welcome">
+    <meta name="description" content="Emon Log Store | Welcome">
     <!-- Title-->
-    <title>Fadded Social | Welcome</title>
+    <title>Emon Log Store | Welcome</title>
     <!-- Favicon-->
     <link rel="shortcut icon" href="{{url('')}}/assets/front/img/core-img/favicon.ico" type="image/x-icon">
     <!-- All CSS Stylesheet-->
@@ -158,7 +158,7 @@
             <!-- About Text Area -->
             <div class="col-12 col-sm-10 col-md-9 col-lg-5">
                 <div class="section-heading mb-0 ms-xl-5">
-                    <h6>At Fadded Socials</h6>
+                    <h6>At Emon Log Stores</h6>
                     <h2>We focus on quality socials accounts.</h2>
                     <p>At Log marketplace, we specialize in offering a wide selection of accounts that can be useful for various purposes, whether it's for marketing, brand promotion, newsletters, and much more.</p>
                     <div class="about-btn-group"><a class="btn btn-warning mt-5" href="/products">Shop now</a></div>
