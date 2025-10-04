@@ -191,7 +191,7 @@ class UserController extends Controller
 
 
                 $user_email = Auth::user()->email;
-                $message = "$user_email | $request->trx_ref | $session_id | $var->amount | just resolved deposit | FADDEDs";
+                $message = "$user_email | $request->trx_ref | $session_id | $var->amount | just resolved deposit | EmonBests";
                 send_notification($message);
                 send_notification2($message);
                 return back()->with('success', "Transaction successfully Resolved, NGN $amount added to ur wallet");
