@@ -10,15 +10,15 @@
     <meta name="author" content="DexignZone"/>
     <meta name="keywords" content=""/>
     <meta name="robots" content=""/>
-    <meta name="description" content="FADDED STORE"/>
-    <meta property="og:title" content="FADDED STORE"/>
-    <meta property="og:description" content="FADDED STORE"/>
+    <meta name="description" content="EmonBest Log Store"/>
+    <meta property="og:title" content="EmonBest Log Store"/>
+    <meta property="og:description" content="EmonBest Log Store"/>
     <meta name="format-detection" content="telephone=no">
 
     <!-- Favicons Icon -->
 
     <!-- Title -->
-    <title>FADDED STORE</title>
+    <title>EmonBest Log Store</title>
 
     <!-- PWA Version -->
     <link rel="manifest" href="manifest.json">
@@ -389,7 +389,7 @@
             <div class="container">
                 <div class="offcanvas-body small">
                     <img class="logo" src="{{url('')}}/assets/assets/images/icon.png" alt="">
-                    <h5 class="title">Welcome to FADDED STORE</h5>
+                    <h5 class="title">Welcome to EmonBest Log Store</h5>
                     <p class="pwa-text">Install Acelog store just like any other app</p>
                     <a href="javascrpit:void(0);" class="btn btn-sm btn-primary pwa-btn">Add to Home Screen</a>
                     <a href="javascrpit:void(0);" class="btn btn-sm pwa-close light btn-secondary ms-2">Maybe later</a>

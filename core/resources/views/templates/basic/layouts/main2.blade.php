@@ -7,7 +7,7 @@
     <meta name="description"
           content="Emon Log Store">
     <meta name="keywords"
-          content="Fadded logstore">
+          content="EmonBest logstore">
     <meta name="author" content="Phoenixcoded"><!-- [Favicon] icon -->
     <link rel="icon" href="{{url('')}}/assets/assets2/images/favicon.svg" type="image/x-icon">
     <!-- [Page specific CSS] start -->
